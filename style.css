@@ -6,6 +6,9 @@ body {
     background-image: -webkit-linear-gradient(0, rgba(12, 0, 200, 0.42) 50%, transparent 50%), -webkit-linear-gradient(rgba(12, 0, 200, 0.42) 50%, transparent 50%);
     background-image: -o-linear-gradient(0, rgba(12, 0, 200, 0.42) 50%, transparent 50%), -webkit-linear-gradient(rgba(12, 0, 200, 0.42) 50%, transparent 50%);
     background-size: 50px 50px;
+    background: url('background.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 	color:#545454;
 	font-size:1em;
 	margin:0;
@@ -17,13 +20,15 @@ a{
 h3{
 	margin:0;
 	font-size:1.1em;
+    margin-bottom: 8px;
 }
 p{
 	margin:0;
+    margin-bottom: 5px;
 }
 li{
 	margin:0;
-	line-height:1.2;
+	line-height:1.4;
 	font-size:0.95em;
 }
 span{
