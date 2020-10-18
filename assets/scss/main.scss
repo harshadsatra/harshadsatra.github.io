@@ -1,0 +1,498 @@
+/* Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+$primary-font: "Roboto", sans-serif;
+$heading-font: "Roboto", sans-serif;
+$primary-font-size: 14px;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+$primary-font: 'Inter', sans-serif;
+$heading-font: 'Inter', sans-serif;
+$primary-font-size: 14px;
+$primary-font-weight: 400;
+
+// transitions
+@mixin transition($property, $duration) {
+	-webkit-transition: $property $duration ease-in-out;
+	-moz-transition: $property $duration ease-in-out;
+	transition: $property $duration ease-in-out;
+}
+
+/* Custom Scroll Bar with CSS */
+/*
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background: kt-get($x-base-colors, gray, 300);
+}
+::-webkit-scrollbar-thumb {
+	background: kt-get($x-base-colors, gray, 500);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: kt-get($x-base-colors, gray, 700);
+}
+
+@import "vendor";
+@import "bootstrap-grid";
+@import "carousel";
+@import "icon-fonts";
+@import "config";
+@import "header";
+@import "footer";
+@import "components";
+@import "animations";
+
+*/
+
+$primary: #de5f5f;
+$black: #555;
+$grey: #343436;
+$lightgrey: #959595;
+
+$font-serif: 'Inter', sans-serif;
+$font-sans: 'Inter', sans-serif;
+$transition: all 0.3s cubic-bezier(.05, .69, .14, 1);
+
+html {
+  box-sizing: border-box;
+  font-family: $font-serif;
+  color: $black;
+  font-size: 16px;
+
+  @for $i from 1 through 20 {
+    @media (min-width: #{6.25 * $i}em) {
+      font-size: #{16 + $i}px;
+    }
+  }
+
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/**
+ * The fixed Side 
+ */
+$sideWidth: 50px;
+
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: $sideWidth;
+  border-right: 1px dashed rgba(black, .3);
+  color: rgba(black, .5);
+  font-family: $font-sans;
+  text-transform: uppercase;
+  letter-spacing: .0875rem;
+  font-size: 10px;
+  transition: $transition;
+
+  &:hover {
+    color: rgba(black, .5);
+  }
+
+  .side__inner {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  a {
+    color: inherit;
+    word-spacing: 0;
+    transition: $transition;
+  }
+
+  .top,
+  .bottom {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg) perspective(1px);
+    transform-origin: $sideWidth $sideWidth;
+    height: $sideWidth;
+    line-height: $sideWidth;
+    white-space: nowrap;
+    word-spacing: .5rem;
+  }
+
+  .top {
+    top: $sideWidth * 1;
+    text-align: right;
+    color: black;
+  }
+
+  .bottom {
+    top: auto;
+    bottom: $sideWidth * 1.5;
+
+    &:hover {
+      a {
+        color: rgba(black, .2);
+
+        &:hover {
+          color: rgba(black, .8);
+        }
+      }
+    }
+  }
+}
+
+
+/* Text Rotate */
+.change-text {
+  width: 130px;
+  position: relative;
+  height: 100px;
+
+  &:before {
+    content: '';
+    background: white;
+    position: absolute;
+    right: -20px;
+    bottom: -1px;
+    height: 41px;
+    width: 20px;
+    display: none;
+  }
+
+
+  span {
+    @include transition(all, .4s);
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    line-height: 1;
+    clip: rect(0px, 0px, 198px, 0px);
+    color: #181818;
+    &:after {
+      content: '';
+      background: white;
+      position: absolute;
+      right: -40px;
+      bottom: -1px;
+      height: 41px;
+      width: 10px;
+      display: none;
+    }
+  }
+
+  span.active {
+    @include transition(all, .85s);
+    opacity: 1;
+    clip: rect(0, 500px, 198px, 0px);
+  }
+}
+
+/**
+ * The first navigation
+ */
+.anchornav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: block;
+
+    &::after {
+      content: '';
+      width: 1.3rem;
+      display: block;
+      height: 2px;
+      background: black;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1em 0;
+    font-family: $font-sans;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    color: inherit;
+    transition: $transition;
+
+    span {
+      display: inline;
+      padding: .5em 0 0;
+      opacity: .3;
+      letter-spacing: normal;
+      font-family: $font-serif;
+      text-transform: none;
+    }
+
+    &:hover {
+      color: $primary;
+
+      span {
+        opacity: 1;
+        color: #181818;
+      }
+    }
+  }
+}
+
+/**
+ * The different sections
+ */
+.section {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-height: 60vh;
+  width: 100%;
+  align-content: center;
+  padding: 20vh $sideWidth 20vh $sideWidth * 1.5;
+
+  svg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+
+    &.bottom {
+      bottom: 0;
+      top: auto;
+      fill: grey;
+    }
+  }
+
+  .section__inner {
+    height: 100%;
+    max-width: 800px;
+    margin: auto auto auto 0;
+  }
+
+
+  &.section--hello {
+    background-color: #FDEF52;
+    color: #181818;
+  }
+
+  &.section--intro {
+    background-color: white;
+    color: $black;
+  }
+
+  &.section--about {
+    background-color: $primary;
+    color: white;
+
+    svg {
+      fill: $primary;
+    }
+  }
+
+  &.section--clients {
+    background-color: $grey;
+    color: white;
+
+    svg {
+      fill: $grey;
+    }
+  }
+
+  &.section--portfolio {
+    background-color: orange;
+    color: white;
+
+    svg {
+      top: -20px;
+      fill: orange;
+
+      &.bottom {
+        top: auto;
+        bottom: -50px;
+      }
+    }
+  }
+
+  &.section--portfolio1 {
+    background-color: #3A99D8;
+    color: white;
+
+    svg {
+      top: -50px;
+      fill: #3A99D8;
+    }
+  }
+
+
+  &.section--pepperhill {
+
+
+    svg {
+      top: -50px;
+      fill: #3A99D8;
+    }
+  }
+
+
+
+  &.section--contact {
+    svg {
+      fill: white;
+    }
+  }
+}
+
+/**
+ * Typo
+ */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h5 {
+  font-family: $font-sans;
+  font-weight: bold;
+  margin: 0 0 1em;
+  line-height: 1;
+  letter-spacing: -1px;
+
+
+  @media (min-width: 30rem) {
+    letter-spacing: -2px;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      border-bottom: .1875rem solid;
+    }
+  }
+
+  span {
+    color: $primary;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 1.2rem;
+
+  @media (min-width: 30rem) {
+    font-size: 2.5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 1.2rem;
+
+  @media (min-width: 30rem) {
+    font-size: 2.5rem;
+  }
+}
+
+.pre {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0;
+  opacity: .8;
+  letter-spacing: 1.4px;
+  word-spacing: .2rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: inherit;
+  //padding: 6px 5px 5px;
+  //background: rgba(black,.1);
+
+  span {
+    font-size: .9em;
+    margin-right: .4em;
+    //color: $primary;
+    opacity: .5;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: .75rem;
+  line-height: 1.4;
+
+  @media (min-width: 30rem) {
+    font-size: .875rem;
+  }
+
+  a {
+    font-weight: bold;
+    color: inherit;
+
+    &:hover {
+      border-bottom: .1875rem solid;
+    }
+  }
+}
+
+.lead {
+  display: block;
+  font-size: .875rem;
+  margin: 0;
+
+  @media (min-width: 30rem) {
+    font-size: 1rem;
+  }
+}
+
+.portfolio {
+  font-size: .75rem;
+
+  &.block {
+    display: inline-block;
+    width: 100%;
+
+    @media (min-width: 30rem) {
+      width: 30%;
+    }
+  }
+
+  .link {
+    display: block;
+    margin: 2em 0 0 0;
+    color: $black;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+
+  p {
+    font-size: inherit;
+    color: $grey;
+    opacity: .7;
+  }
+}
+
+// @import "responsive";

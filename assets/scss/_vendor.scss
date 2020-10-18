@@ -1,0 +1,17 @@
+/* Plugins from Node Modules */
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
+
+@import "aos/src/sass/aos.scss";
+[data-aos='fade-up'] {
+  transform: translate3d(0, 30px, 0);
+}
+html:not(.no-js) [data-aos='fade-right'] {
+    transform: translate3d(-30px, 0, 0);
+}
+html:not(.no-js) [data-aos='fade-left'] {
+    transform: translate3d(30px, 0, 0);
+}
+html:not(.no-js) [data-aos='fade-up'] {
+    transform: translate3d(0, 30px, 0);
+}

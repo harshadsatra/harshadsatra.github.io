@@ -1,0 +1,99 @@
+
+$blue: #5192f2;
+$white: #ffffff;
+$black: #1A202C;
+$gray : #f1f1f1;
+$red: #FF5F5F;
+$yellow: #EAA222;
+$light-blue: #edf5ff;
+$light-yellow: #f8f3e5;
+$light-red: #f8e5e5;
+$color-logo-black: rgb(96, 96, 96);
+$color-light-blue: #eef4fd;
+$body-text-color: #4A5568;
+$light-gray: #718196;
+
+$colours :(
+  primary: $blue,
+  blue: $blue,
+  white: $white,
+  black: $black,
+  gray: lighten($gray, 3%),
+  red: $red,
+  yellow: $yellow,
+  blue-light: $light-blue, // lighten( $blue, 30% ),
+  red-light: $light-red, // lighten( $blue, 30% ),
+  yellow-light: $light-yellow // lighten( $blue, 30% )
+);
+
+@each $key, $value in $colours {  
+  .bg-#{$key}{
+    background-color: $value;
+  }
+  .color-#{$key}{
+    color: $value;
+  }
+}
+
+
+$fonts : (10,11,12,14,18,18,20,24,36,40,44,48,50,55,60);
+@mixin font-classes {
+  @each $i in $fonts {
+    .f-#{$i} {font-size: #{$i}px;}
+  }
+}
+@include font-classes;
+
+$font-weights: (100,200,300,400,500,600,700);
+@mixin font-weight {
+  @each $i in $font-weights {
+    .f-#{$i} {font-weight: #{$i};}
+  }
+}
+@include font-weight;
+
+$sizes: 12;
+$spacers : (0, 4,8,12,16,24,32,36,48,60,64,80,120,150,180);
+$space-type-map: (
+  m: margin,
+  p: padding,
+);
+$space-dir-map: (
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+);
+
+@mixin margin-classes {
+  @each $i in $spacers {
+    /* margin #{$margin} */
+    .m-#{$i}  {margin: #{$i}px;}
+    .ml-#{$i} {margin-left: #{$i}px !important;}
+    .mr-#{$i} {margin-right: #{$i}px !important;}
+    .mt-#{$i} {margin-top: #{$i}px !important;}
+    .mb-#{$i} {margin-bottom: #{$i}px !important;}
+    .mx-#{$i} {margin-left: #{$i}px; margin-right: #{$i}px;}
+    .my-#{$i} {margin-top: #{$i}px; margin-bottom: #{$i}px; margin-left:auto; margin-right:auto}
+  }
+}
+@include margin-classes;
+
+@mixin padding-classes {
+  @each $i in $spacers {
+    .p-#{$i} {padding: #{$i}px;}
+    .pl-#{$i} {padding-left: #{$i}px;}
+    .pr-#{$i} {padding-right: #{$i}px;}
+    .pt-#{$i} {padding-top: #{$i}px;}
+    .pb-#{$i} {padding-bottom: #{$i}px;}
+    .px-#{$i} {padding-left: #{$i}px; padding-right: #{$i}px;}
+    .py-#{$i} {padding-top: #{$i}px; padding-bottom: #{$i}px;}
+  }
+}
+@include padding-classes;
+
+
+$transition: all 0.3s !default;
+@mixin transition {
+  transition: $transition;
+}

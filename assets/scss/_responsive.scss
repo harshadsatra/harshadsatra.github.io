@@ -1,0 +1,39 @@
+@media screen and (max-width: 650px) {
+
+    .f-48{
+        font-size:36px;
+    }
+    .hidden-on-mobile,.top-dd-menu{
+        display: none;
+    }
+    .main-footer{
+        h4{
+            margin-top:32px;
+        }
+    }
+
+    .steps-box{
+        margin-bottom:16px !important;
+        &:after{
+            transform: rotate(90deg);
+        }
+    }
+
+    .all-platform{
+        span{
+            display: block;
+            &:after,&:before{
+                display: none;
+            }
+        }
+    }
+
+    .why-docux-section{
+        .content-box{
+            border-bottom:solid 2px $color-light-blue;
+            &:after,&:before{
+                display: none;
+            }
+        }
+    }
+}
