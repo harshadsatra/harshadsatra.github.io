@@ -10,7 +10,6 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<meta property="og:type" content="profile" />
 		<meta property="og:title" content="Are you looking for a Web Developer?" />
 		<meta property="og:url" content="http://harshadsatra.in" />
@@ -22,6 +21,10 @@
 		<meta property="og:image:height" content="1200" />
 	</head>
 	<body>
+
+		<div class="cursor cursor--large"></div>
+		<div class="cursor cursor--small"></div>
+
 		<nav class="side">
 			<div class="side__inner">
 				<div class="top"><a href="#">Harshad Satra</a></div>
@@ -46,7 +49,7 @@
 		<section class="section section--hello" id="hello">
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#intro"><span>#0</span>Hello</a>
+					<a class="pre" href="#intro"><span></span>Hello</a>
 					<!-- <h2>Hello</h2> -->
 
 					<h2 class="change-text">
@@ -59,21 +62,27 @@
 						<span>Bonjour</span>
 						<span>Kon’nichiwa</span>
 					</h2>
-					<ul class="anchornav">
+					<ul class="top-navigation">
 						<li>
-							<a href="#intro">Intro <span>#1 What is going on?</span></a>
+							<a href="#intro">INTRO <span>Who am I?</span></a>
 						</li>
 						<li>
-							<a href="#about">About <span>#2 Who is this guy?</span></a>
+							<a href="#process">process <span>How i work?</span></a>
 						</li>
 						<li>
-							<a href="#clients">Clients <span>#3 Who did he work for?</span></a>
+							<a href="#services">services <span>What do I do?</span></a>
 						</li>
 						<li>
-							<a href="#portfolio">Portfolio <span>#4 What did he do?</span></a>
+							<a href="#collabarations">collabarations <span>With whom do I work?</span></a>
 						</li>
 						<li>
-							<a href="#contact">Contact <span>#5 Write him a message</span></a>
+							<a href="#projects">projects <span>What have I done?</span></a>
+						</li>
+						<li>
+							<a href="#clients">clients <span>Who have I worked for?</span></a>
+						</li>
+						<li>
+							<a href="#contact">contact <span>How to reach me?</span></a>
 						</li>
 					</ul>
 				</div>
@@ -83,7 +92,7 @@
 		<section class="section section--intro" id="intro">
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#intro"><span>#1</span>Intro</a>
+					<a class="pre" href="#intro"><span></span>INTRO</a>
 					<h1>
 						I am a <br />
 						Web developer<br />
@@ -95,28 +104,131 @@
 			</div>
 		</section>
 
-		<section class="section section--about" id="about">
+		<section class="section section--portfolio" id="process">
+			<div class="section__inner">
+				<div class="block">
+					<a class="pre" href="#about"><span></span>PROCESS</a>
+					<h2>From small things to great change</h2>
+					<p>I aim to build long lasting partnerships with my customers. I want to share the responsibility of my customers products and services. From the smallest design details, to long term impact analysis and strategic development.</p>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" class="bottom">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+		</section>
+
+		<section class="section section--portfolio" id="services">
+			<div class="section__inner">
+				<div class="block">
+					<a class="pre" href="#about"><span></span>services</a>
+					<h2>Portfolio Item #2</h2>
+					<p>Descripton of said portfolio item.</p>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" class="bottom">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+		</section>
+
+		<section class="section section--about" id="collabarations">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
 				<polygon points="100 0 100 10 0 10" />
 			</svg>
 
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#about"><span>#2</span>How</a>
+					<a class="pre" href="#about"><span></span>COLLABARATIION</a>
 					<h2>I work with designers, freelancers and agencies to create beautiful websites and applications</h2>
+
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<img src="assets/img/profile.jpeg">
+									</div>
+									<div class="user-info">
+										<h3>Gaurav Panday</h3>
+										<h4>Full Stack developer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<span class="gravtar">SP</span>
+									</div>
+									<div class="user-info">
+										<h3>Sandesh Palkar</h3>
+										<h4>Designer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<span class="gravtar">SP</span>
+									</div>
+									<div class="user-info">
+										<h3>Sandesh Palkar</h3>
+										<h4>Designer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<span class="gravtar">SP</span>
+									</div>
+									<div class="user-info">
+										<h3>Sandesh Palkar</h3>
+										<h4>Designer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<span class="gravtar">SP</span>
+									</div>
+									<div class="user-info">
+										<h3>Sandesh Palkar</h3>
+										<h4>Designer</h4>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="user-profile-block">
+									<div class="user-media">
+										<span class="gravtar">SP</span>
+									</div>
+									<div class="user-info">
+										<h3>Sandesh Palkar</h3>
+										<h4>Designer</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
 					<p class="lead">Building the right foundation to ongoing optimization and support. Turning the ideas into reality.</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="section section--clients" id="clients">
+		<section class="section section--clients" id="projects">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
 				<polygon points="100 10 0 0 0 10" />
 			</svg>
 
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#clients"><span>#3</span>Projects</a>
+					<a class="pre" href="#clients"><span></span>PROJECTS</a>
 					<h2>See some of my projects</h2>
 					<nav class="menu menu--adsila">
 						<a class="menu__item" href="https://www.interoceanventures.com/" target="_blank">
@@ -152,38 +264,24 @@
 			</div>
 		</section>
 
-		
-		<section class="section section--portfolio1" id="portfolio">
+		<section class="section section--portfolio1" id="clients">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 				<path d="M0 100 C 20 0 50 0 100 100 Z"></path>
 			</svg>
 
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#portfolio"><span>#4</span>Portfolio</a>
+					<a class="pre" href="#portfolio"><span></span>clients</a>
 					<h2>Portfolio Item #1</h2>
 					<p class="lead">Here are some of his clients, he has had the pleasure working with.</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="section section--portfolio" id="portfolio2">
-			<div class="section__inner">
-				<div class="block">
-					<h2>Portfolio Item #2</h2>
-					<p>Descripton of said portfolio item.</p>
-				</div>
-			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" class="bottom">
-				<path d="M0 0 L50 100 L100 0 Z"></path>
-			</svg>
-		</section>
-		
-
 		<section class="section section--contact" id="contact">
 			<div class="section__inner">
 				<div class="block">
-					<a class="pre" href="#contact"><span>#5</span>Get in touch</a>
+					<a class="pre" href="#contact"><span>#6</span>CONTACT</a>
 					<h2>
 						If there's anything you want to talk about with me feel free to drop me a line by <span><a href="mailto:harshad.satra2@gmail.com">email</a></span>.
 					</h2>
