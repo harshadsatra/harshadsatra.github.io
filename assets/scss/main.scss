@@ -39,7 +39,7 @@ $primary-font-weight: 400;
 	background: kt-get($x-base-colors, gray, 700);
 }
 
-@import "vendor";
+
 @import "bootstrap-grid";
 @import "carousel";
 @import "icon-fonts";
@@ -50,6 +50,9 @@ $primary-font-weight: 400;
 @import "animations";
 
 */
+
+
+@import "vendor";
 
 @import "swiper/swiper.scss";
 

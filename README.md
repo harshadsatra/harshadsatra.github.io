@@ -12,6 +12,11 @@ I Have worked on the various projects as a senior web developer in Yellow Slice,
 - https://wrongakram.com/
 - https://heyakram.com/
 
+## Code References:
+- https://codepen.io/l4ci/pen/RGazmp
+- https://codepen.io/dev_loop/pen/KKdEgdz
+- https://codepen.io/rafaelavlucas/pen/MLKGba?editors=0100
+
 
 ## Services:
 - Design + Development of website
