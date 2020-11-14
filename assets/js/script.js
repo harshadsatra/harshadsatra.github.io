@@ -10,12 +10,10 @@ const debounce = (func, delay) => {
 // example : debounce( function_name(parameters), 500);
 
 /**
- * Text Animation Home Page
+ * Text Animation Animation
  * Refrence : https://codepen.io/Rathijit/pen/EbQqPd
  */
-
-// text rotator
-textRotator = function (element) {
+textRotator = (element) => {
 	var words = $(element),
 		total = words.length - 1,
 		position = 0,
@@ -80,23 +78,21 @@ $('a[href*="#"]')
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
-	debounce(scrollIndicator(),10);
+	debounce(scrollIndicator(), 10);
 };
 
 function scrollIndicator() {
 	const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 	const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 100;
-  const screenHeiight = screen.height;
-  document.getElementById("scrollBar").style.height = scrolled + "%";
-  if(winScroll >= (height - screenHeiight)){
-    $('.icon-scroll').fadeOut();
-  }else{
-    $('.icon-scroll').fadeIn();
-  }
+	const scrolled = (winScroll / height) * 100;
+	const screenHeiight = screen.height;
+	document.getElementById("scrollBar").style.height = scrolled + "%";
+	if (winScroll >= height - screenHeiight) {
+		$(".icon-scroll").fadeOut();
+	} else {
+		$(".icon-scroll").fadeIn();
+	}
 }
-
-
 
 const { gsap } = window;
 const cursorOuter = document.querySelector(".cursor--large");
@@ -109,9 +105,9 @@ let mouse = {
 
 // Just in case you need to scroll
 let scrollHeight = 0;
-window.addEventListener('scroll', function(e) {
-	scrollHeight = window.scrollY
-})
+window.addEventListener("scroll", function (e) {
+	scrollHeight = window.scrollY;
+});
 
 let cursorOuterOriginalState = {
 	width: cursorOuter.getBoundingClientRect().width,
@@ -162,159 +158,137 @@ function updateCursor() {
 
 updateCursor();
 
-
-
 // https://builtbymax.de
 // Maximilian Kobus | KØBY
 
 (function () {
-	document.addEventListener('DOMContentLoaded', function () {
-  
-	  'use strict';
-  
-	  Cards.init();
-	  conf.InfoBox();
-  
+	document.addEventListener("DOMContentLoaded", function () {
+		"use strict";
+		Cards.init();
+		conf.InfoBox();
+		tSlider.init();
 	});
-  })();
-  
-  const Cards = {
-  
+})();
+
+const Cards = {
 	init: () => {
-	  Cards.triggerCardChange();
-	  Cards.directlyClickOnCards();
-	  Cards.imageHoverPerspective();
+		Cards.triggerCardChange();
+		Cards.directlyClickOnCards();
 	},
-  
+
 	//  Change the active Card on directly clicking on it
-	// - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
 	directlyClickOnCards: () => {
-	  let cards = conf.qSA('.card');
-	  if (cards.length) {
-		cards.forEach(function (item) {
-		  item.onclick = () => {
-			if (!item.classList.contains('active')) {
-			  // search the active card
-			  for (let i = 0; i < cards.length; i++) {
-				if (cards[i].classList.contains('active')) {
-				  let dataCard = cards[i];
-				  dataCard.classList.add('inactive');
-				  dataCard.classList.remove('active');
-				  break;
-				}
-			  }
-  
-			  conf.qS('.cards-wrapper').prepend(item);
-			  item.classList.remove('inactive');
-			  item.classList.add('active');
-			}
-		  };
-		});
-	  }
+		let cards = conf.qSA(".card");
+		if (cards.length) {
+			cards.forEach(function (item) {
+				item.onclick = () => {
+					if (!item.classList.contains("active")) {
+						// search the active card
+						for (let i = 0; i < cards.length; i++) {
+							if (cards[i].classList.contains("active")) {
+								let dataCard = cards[i];
+								dataCard.classList.add("inactive");
+								dataCard.classList.remove("active");
+								break;
+							}
+						}
+
+						conf.qS(".cards-wrapper").prepend(item);
+						item.classList.remove("inactive");
+						item.classList.add("active");
+					}
+				};
+			});
+		}
 	},
-  
+
 	//  Change the active Card
-	// - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
 	triggerCardChange: () => {
-  
-	  let arrow = conf.qS('.slide-button'),
-	  cards = conf.qSA('.card');
-  
-	  if (arrow) {
-		arrow.onclick = (e) => {
-			e.preventDefault();
-		  if (cards.length) {
-			for (let i = 0; i < cards.length; i++) {
-			  if (cards[i].classList.contains('active')) {
-				let dataCard = cards[i];
-				getNextCard(dataCard);
-				break;
-			  }
-			}
-		  }
-  
-		  function getNextCard(prevCard) {
-  
-			for (let i = 0; i < cards.length; i++) {
-			  let dataCard = parseInt(prevCard.getAttribute('data-card'), 10),
-			  nextCard = parseInt(cards[i].getAttribute('data-card'), 10);
-  
-			  if (dataCard + 1 === nextCard) {
-				prevCard.classList.add('inactive');
-				prevCard.classList.remove('active');
-				conf.qS('.cards-wrapper').prepend(cards[i]);
-				cards[i].classList.remove('inactive');
-				cards[i].classList.add('active');
-				break;
-			  } else if (dataCard + 1 >= cards.length) {
-				prevCard.classList.add('inactive');
-				prevCard.classList.remove('active');
-				conf.qS('.cards-wrapper').prepend(cards[i]);
-				cards[0].classList.remove('inactive');
-				cards[0].classList.add('active');
-				break;
-			  }
-			}
-		  }
-		};
-	  }
+		let arrow = conf.qS(".slide-button"),
+			cards = conf.qSA(".card");
+
+		if (arrow) {
+			arrow.onclick = (e) => {
+				e.preventDefault();
+				if (cards.length) {
+					for (let i = 0; i < cards.length; i++) {
+						if (cards[i].classList.contains("active")) {
+							let dataCard = cards[i];
+							getNextCard(dataCard);
+							break;
+						}
+					}
+				}
+
+				function getNextCard(prevCard) {
+					for (let i = 0; i < cards.length; i++) {
+						let dataCard = parseInt(prevCard.getAttribute("data-card"), 10),
+							nextCard = parseInt(cards[i].getAttribute("data-card"), 10);
+
+						if (dataCard + 1 === nextCard) {
+							prevCard.classList.add("inactive");
+							prevCard.classList.remove("active");
+							conf.qS(".cards-wrapper").prepend(cards[i]);
+							cards[i].classList.remove("inactive");
+							cards[i].classList.add("active");
+							break;
+						} else if (dataCard + 1 >= cards.length) {
+							prevCard.classList.add("inactive");
+							prevCard.classList.remove("active");
+							conf.qS(".cards-wrapper").prepend(cards[i]);
+							cards[0].classList.remove("inactive");
+							cards[0].classList.add("active");
+							break;
+						}
+					}
+				}
+			};
+		}
 	},
-  
-	//  Change the Image perspective on mouseover
-	// - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
-	imageHoverPerspective: () => {
-	  let cards = conf.qSA('.card');
-	  if (cards.length) {
-		cards.forEach(function (card) {
-		  let image = conf.CqS(card, '.image-wrapper');
-		  image.onmousemove = e => {
-  
-			let offset = image.getBoundingClientRect(),
-			elX = offset.left + document.body.scrollTop,
-			elY = offset.top + document.body.scrollTop,
-			elWidth = image.offsetWidth,
-			elHeight = image.offsetHeight,
-			intensity = 11,
-			mouseX = e.pageX,
-			mouseY = e.pageY,
-			rotateY = (elWidth / 2 - (mouseX - elX)) / (elWidth / 2) * intensity,
-			rotateX = (elHeight / 2 - (mouseY - elY)) / (elHeight / 2) * intensity;
-  
-			let style = 'transform: rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
-			image.setAttribute('style', style);
-		  };
-		  image.onmouseleave = () => {
-			image.removeAttribute('style');
-		  };
-		});
-	  }
-	} };
-  
-  
-  //  Config Functions
-  // - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
-  const conf = {
-	qS: selector => {
-	  return document.querySelector(selector);
+};
+
+//  Config Functions
+const conf = {
+	qS: (selector) => {
+		return document.querySelector(selector);
 	},
-	qSA: selector => {
-	  return document.querySelectorAll(selector);
+	qSA: (selector) => {
+		return document.querySelectorAll(selector);
 	},
 	CqS: (container, selector) => {
-	  return container.querySelector(selector);
+		return container.querySelector(selector);
 	},
 	InfoBox: () => {
-	  let toggle = conf.qS('.infobox-container .infobox-toggle'),
-	  detail = conf.qS('.infobox-container .infobox-detail-container');
-  
-	  if (toggle) {
-		toggle.onclick = e => {
-		  e.preventDefault();
-		  detail.classList.toggle('active');
-		};
-	  }
-	} };
+		let toggle = conf.qS(".infobox-container .infobox-toggle"),
+			detail = conf.qS(".infobox-container .infobox-detail-container");
+		if (toggle) {
+			toggle.onclick = (e) => {
+				e.preventDefault();
+				detail.classList.toggle("active");
+			};
+		}
+	},
+};
+
+
+
+const tSlider = {
+	slideIndex: 1,
+	init: () => {
+		tSlider.slide(tSlider.slideIndex);
+	},
+	slide(n) {
+		tSlider.showDivs(tSlider.slideIndex += n);
+	},
+	showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("testimonial");
+		if (n > x.length) {tSlider.slideIndex = 1}
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+		  x[i].classList.remove("active");
+		  x[i].classList.add("inactive");
+		}
+		x[tSlider.slideIndex - 1].classList.add("active");
+	}
+};
