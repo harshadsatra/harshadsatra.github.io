@@ -1,22 +1,3 @@
-/*
-$(window).load(function() {
-  // Handler for .load() called.
-});
-*/
-
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar',
-  },
-});
-
 const debounce = (func, delay) => {
 	let debounceTimer;
 	return function () {
@@ -118,7 +99,6 @@ function scrollIndicator() {
 
 
 const { gsap } = window;
-
 const cursorOuter = document.querySelector(".cursor--large");
 const cursorInner = document.querySelector(".cursor--small");
 let isStuck = false;
@@ -182,47 +162,159 @@ function updateCursor() {
 
 updateCursor();
 
-/*
-function handleMouseEnter(e) {
-	isStuck = true;
-	const targetBox = e.currentTarget.getBoundingClientRect();
-	gsap.to(cursorOuter, 0.2, {
-		x: targetBox.left + targetBox.width / 2,
-		y: (targetBox.top + targetBox.height / 2) + scrollHeight,
-		width: targetBox.width,
-		height: targetBox.width,
-		borderRadius: 0,
-		backgroundColor: "rgba(255, 255, 255, 0.1)",
+
+
+// https://builtbymax.de
+// Maximilian Kobus | KØBY
+
+(function () {
+	document.addEventListener('DOMContentLoaded', function () {
+  
+	  'use strict';
+  
+	  Cards.init();
+	  conf.InfoBox();
+  
 	});
-}
-
-function handleMouseLeave(e) {
-	isStuck = false;
-	gsap.to(cursorOuter, 0.2, {
-		width: cursorOuterOriginalState.width,
-		height: cursorOuterOriginalState.width,
-		borderRadius: "50%",
-		backgroundColor: "transparent",
-	});
-}
-*/
-
-
-// tabs
-var tabLinks = document.querySelectorAll(".tablinks");
-var tabContent = document.querySelectorAll(".tabcontent");
-tabLinks.forEach(function(el) {
-   el.addEventListener("click", openTabs);
-});
-function openTabs(el) {
-   var btnTarget = el.currentTarget;
-   var country = btnTarget.dataset.country;
-   tabContent.forEach(function(el) {
-      el.classList.remove("active");
-   });
-   tabLinks.forEach(function(el) {
-      el.classList.remove("active");
-   });
-   document.querySelector("#" + country).classList.add("active");
-   btnTarget.classList.add("active");
-}
+  })();
+  
+  const Cards = {
+  
+	init: () => {
+	  Cards.triggerCardChange();
+	  Cards.directlyClickOnCards();
+	  Cards.imageHoverPerspective();
+	},
+  
+	//  Change the active Card on directly clicking on it
+	// - - - - - - - - - - - - - - - - - - - - - - - - - -
+  
+	directlyClickOnCards: () => {
+	  let cards = conf.qSA('.card');
+	  if (cards.length) {
+		cards.forEach(function (item) {
+		  item.onclick = () => {
+			if (!item.classList.contains('active')) {
+			  // search the active card
+			  for (let i = 0; i < cards.length; i++) {
+				if (cards[i].classList.contains('active')) {
+				  let dataCard = cards[i];
+				  dataCard.classList.add('inactive');
+				  dataCard.classList.remove('active');
+				  break;
+				}
+			  }
+  
+			  conf.qS('.cards-wrapper').prepend(item);
+			  item.classList.remove('inactive');
+			  item.classList.add('active');
+			}
+		  };
+		});
+	  }
+	},
+  
+	//  Change the active Card
+	// - - - - - - - - - - - - - - - - - - - - - - - - - -
+  
+	triggerCardChange: () => {
+  
+	  let arrow = conf.qS('.slide-button'),
+	  cards = conf.qSA('.card');
+  
+	  if (arrow) {
+		arrow.onclick = (e) => {
+			e.preventDefault();
+		  if (cards.length) {
+			for (let i = 0; i < cards.length; i++) {
+			  if (cards[i].classList.contains('active')) {
+				let dataCard = cards[i];
+				getNextCard(dataCard);
+				break;
+			  }
+			}
+		  }
+  
+		  function getNextCard(prevCard) {
+  
+			for (let i = 0; i < cards.length; i++) {
+			  let dataCard = parseInt(prevCard.getAttribute('data-card'), 10),
+			  nextCard = parseInt(cards[i].getAttribute('data-card'), 10);
+  
+			  if (dataCard + 1 === nextCard) {
+				prevCard.classList.add('inactive');
+				prevCard.classList.remove('active');
+				conf.qS('.cards-wrapper').prepend(cards[i]);
+				cards[i].classList.remove('inactive');
+				cards[i].classList.add('active');
+				break;
+			  } else if (dataCard + 1 >= cards.length) {
+				prevCard.classList.add('inactive');
+				prevCard.classList.remove('active');
+				conf.qS('.cards-wrapper').prepend(cards[i]);
+				cards[0].classList.remove('inactive');
+				cards[0].classList.add('active');
+				break;
+			  }
+			}
+		  }
+		};
+	  }
+	},
+  
+	//  Change the Image perspective on mouseover
+	// - - - - - - - - - - - - - - - - - - - - - - - - - -
+  
+	imageHoverPerspective: () => {
+	  let cards = conf.qSA('.card');
+	  if (cards.length) {
+		cards.forEach(function (card) {
+		  let image = conf.CqS(card, '.image-wrapper');
+		  image.onmousemove = e => {
+  
+			let offset = image.getBoundingClientRect(),
+			elX = offset.left + document.body.scrollTop,
+			elY = offset.top + document.body.scrollTop,
+			elWidth = image.offsetWidth,
+			elHeight = image.offsetHeight,
+			intensity = 11,
+			mouseX = e.pageX,
+			mouseY = e.pageY,
+			rotateY = (elWidth / 2 - (mouseX - elX)) / (elWidth / 2) * intensity,
+			rotateX = (elHeight / 2 - (mouseY - elY)) / (elHeight / 2) * intensity;
+  
+			let style = 'transform: rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg)';
+			image.setAttribute('style', style);
+		  };
+		  image.onmouseleave = () => {
+			image.removeAttribute('style');
+		  };
+		});
+	  }
+	} };
+  
+  
+  //  Config Functions
+  // - - - - - - - - - - - - - - - - - - - - - - - - - -
+  
+  const conf = {
+	qS: selector => {
+	  return document.querySelector(selector);
+	},
+	qSA: selector => {
+	  return document.querySelectorAll(selector);
+	},
+	CqS: (container, selector) => {
+	  return container.querySelector(selector);
+	},
+	InfoBox: () => {
+	  let toggle = conf.qS('.infobox-container .infobox-toggle'),
+	  detail = conf.qS('.infobox-container .infobox-detail-container');
+  
+	  if (toggle) {
+		toggle.onclick = e => {
+		  e.preventDefault();
+		  detail.classList.toggle('active');
+		};
+	  }
+	} };
