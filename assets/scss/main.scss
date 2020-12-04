@@ -267,6 +267,7 @@ $sideWidth: 50px;
  * The different sections
  */
 .section {
+  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -345,7 +346,7 @@ $sideWidth: 50px;
     color: white;
 
     svg {
-      top: -50px;
+      top: -49px;
       fill: #3A99D8;
     }
   }
@@ -674,17 +675,11 @@ p {
 }
 
 @media screen and (max-width: 50em) {
-  .menu .menu__item {
-    margin: 0 0 2em;
-  }
-
   .menu .menu__item-label {
     display: block;
     margin: 0.5em 0 0 1em;
   }
 }
-
-
 
 .paper {
   position: absolute;
@@ -695,6 +690,7 @@ p {
   box-shadow: 0px 0px 5px 0px #888;
   transform: rotate(12deg);
   box-shadow: 0 2px 30px rgba(0,0,0, .1);
+  display: block;
   &:before{
     content: '';
     position: absolute;
@@ -826,6 +822,7 @@ p {
 .cards-container {
   width: 100%;
   max-width: 290px;
+  min-width: 240px;
   position: relative;
 }
 
@@ -1044,3 +1041,16 @@ p {
     transform: translate(0, 0);
   }
 }
+
+#contact{
+  h2{
+    color:#fff;
+    margin:0;
+    span{
+      margin-top:5px;
+      color:#fff;
+    }
+  }
+}
+
+@import "responsive";

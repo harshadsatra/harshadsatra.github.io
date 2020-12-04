@@ -1,39 +1,81 @@
-@media screen and (max-width: 650px) {
-
-    .f-48{
-        font-size:36px;
+@media screen and (max-width: 1026px) {
+    #hello{
+        min-height: 80vh;
+        height: auto;
+        padding-top: 20vh;
     }
-    .hidden-on-mobile,.top-dd-menu{
+    .section{
+        padding: 15vh 50px 15vh 75px;
+    }
+    .paper{
         display: none;
     }
-    .main-footer{
-        h4{
-            margin-top:32px;
-        }
-    }
 
-    .steps-box{
-        margin-bottom:16px !important;
-        &:after{
-            transform: rotate(90deg);
-        }
+    .card-slider{
+        position: relative;
     }
-
-    .all-platform{
-        span{
-            display: block;
-            &:after,&:before{
-                display: none;
+}
+@media screen and (max-width: 650px) {
+    br{
+        display: none;
+    }
+    .change-text{
+        height: 80px;
+    }
+    #hello h2{
+        font-size: 2rem;
+    }
+    h2, .h2, h1, .h1{
+        font-size: 1.5rem;
+    }
+    .top-navigation{
+        li{
+            margin-bottom: 15px;
+        }
+        a{
+            padding: 0.5em 0;
+            span{
+                display: block;
             }
         }
     }
 
-    .why-docux-section{
-        .content-box{
-            border-bottom:solid 2px $color-light-blue;
-            &:after,&:before{
-                display: none;
+    .menu{
+        .menu__item{
+            margin-bottom: 25px;
+            .menu__item-name{
+                padding: 0;
             }
+        }
+    }
+
+    .card-slider{
+        width: auto;
+        padding: 10px;
+        .card{
+            &.inactive{
+                opacity: 0 !important;
+            }
+            &.active{
+                opacity: 1;
+                padding: 20px;
+                border-radius: 12px;
+            }
+            .image-wrapper .image{
+                width: 100px;
+                height: 100px;
+                margin: 0px auto 20px;
+            }
+            .button{
+                bottom: -70px;
+                left: 0;
+            }
+        }
+
+        .slide-button{
+            top: auto;
+            bottom: -83px;
+            right: 0;
         }
     }
 }

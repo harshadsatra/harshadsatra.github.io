@@ -34,7 +34,8 @@ textRotator = (element) => {
 };
 
 $(function () {
-	textRotator(".change-text span");
+	textRotator("#header-change-text span");
+	textRotator("#footer-change-text span");
 });
 
 // Smooth Scrolling
