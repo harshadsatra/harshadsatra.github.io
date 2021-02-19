@@ -1044,6 +1044,7 @@ p {
 }
 
 #contact{
+  
   h2{
     color:#fff;
     margin:0;
@@ -1051,6 +1052,38 @@ p {
       margin-top:5px;
       color:#fff;
     }
+  }
+}
+
+#privacy-policy{
+  padding-left: 10%;
+  h1:not(.title){
+    font-size: 25px;
+    letter-spacing: 0.6px;
+  }
+  h2{
+    font-size: 22px;
+    letter-spacing: 0.6px;
+  }
+  h3{
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+  ul{
+    padding-left: 18px;
+  }
+  p, li{
+    font-size: 16px;
+    margin-bottom: 8px;
+    + h1{
+      margin-top: 50px;
+    }
+    > p{
+      margin-bottom: 0;
+    }
+  }
+  p,ul{
+    margin-bottom:15px;
   }
 }
 
