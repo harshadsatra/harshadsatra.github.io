@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Harshad Satra - Projects</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Harshad is a proficient Front-end Enthusiast, with over 7 years of experience, and have an in-depth knowledge of various areas of development, making the Web a better one website/app after other ;)" />
+		<meta name="keywords" content="Harshad Satra,Harshad,Satra,front end developer,web developer,PHP,wordpress,bootstrap,HTML5,CSS3,html,css,javascript,jQuery,js,freelancer,magento,eCommerce" />
+		<meta name="author" content="Harshad Satra" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta property="og:type" content="profile" />
+		<meta property="og:title" content="Harshad Satra | Front-end Enthusiast" />
+		<meta property="og:url" content="https://harshadsatra.in" />
+		<meta property="og:site_name" content="Harshad Satra" />
+		<meta property="og:image" content="https://harshadsatra.in/assets/img/harshad.jpg" />
+		<meta property="profile:first_name" content="Harshad" />
+		<meta property="profile:last_name" content="Satra" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="1200" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-134R65DHZD"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-134R65DHZD');
+		</script>
+	</head>
+	<body>
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "Person",
+		  "name": "Harshad Satra",
+		  "url": "https://harshadsatra.in/",
+		  "image": "https://harshadsatra.in/assets/img/harshad.jpg",
+		  "sameAs": [
+		    "https://www.linkedin.com/in/harshadsatra/",
+		    "https://github.com/harshadsatra",
+		    "https://www.instagram.com/harshadsatra/"
+		  ],
+		  "jobTitle": "Front-end Enthusiast",
+		  "worksFor": {
+		    "@type": "Organization",
+		    "name": "Self-employed"
+		  }  
+		}
+		</script>
+		<div class="cursor cursor--large"></div>
+		<div class="cursor cursor--small"></div>
+
+		<nav class="side">
+			<div class="side__inner">
+				<div class="top"><a href="#">Harshad Satra</a></div>
+				<div class="bottom">
+					<a href="https://www.linkedin.com/in/harshadsatra/">LinkedIn</a>
+					<a href="https://github.com/harshadsatra">GITHUB</a>
+					<a href="mailto:harshad.satra2@gmail.com">EMAIL ME</a>
+				</div>
+			</div>
+		</nav>
+
+		<div id="scrollBar"></div>
+		<div class="icon-scroll">
+			<div class="mouse">
+				<div class="wheel"></div>
+			</div>
+			<div class="icon-arrows">
+				<span></span>
+			</div>
+		</div>
+
+		<section class="section section--clients" id="projects">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+				<polygon points="100 10 0 0 0 10" />
+			</svg>
+
+			<div class="section__inner">
+				<div class="block">
+					<a class="pre" href="#clients"><span></span>PROJECTS</a>
+					<h2>List of Projects</h2>
+					<template v-for="(value, name, index) in yearly">
+						
+						<nav class="menu menu--adsila project_group">
+							<h4>{{name}}</h4>
+							<template v-for="e in value">
+								<a class="menu__item" :href="e.URL" target="_blank">
+									<span class="menu__item-name">{{e.ProjectName}}</span>
+									<span class="menu__item-label">{{e.tagList}} <template v-if="e.ProjectAs !='Freelance'"> - {{e.ProjectAs}}</template></span>
+								</a>
+							</template>
+						</nav>
+					</template>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section class="section section--contact" id="clients" style="display: none;">
+			<div class="section__inner">
+				<div class="block">
+					<a class="pre" href="#portfolio"><span></span>clients</a>
+					<h2>What Client's Say</h2>
+					<!--
+					<p class="lead">Here are some of his clients, he has had the pleasure working with.</p>
+					-->
+					<div class="testimonial-slider">
+						<div class="testimonial active" data-card="0">
+							<div class="testimonial-content">
+								<p> <span>“</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>“</span> 
+								</p>
+							</div>
+		
+						   <div class="testimonial-info">
+							   <h3 class="testimonial-title">
+								   Testimonial 1
+								   <small>Web Developer</small>
+							   </h3>
+						   </div>
+						</div>
+						<div class="testimonial inactive"  data-card="1">
+							<div class="testimonial-content">
+								<p> <span>“</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>“</span> 
+								</p>
+							</div>
+		
+						   <div class="testimonial-info">
+							   <h3 class="testimonial-title">
+									Testimonial 2
+								   <small>Web Developer</small>
+							   </h3>
+						   </div>
+						</div>
+						<div class="testimonial inactive"  data-card="2">
+							<div class="testimonial-content">
+								<p> <span>“</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deleniti dolor ipsum
+									molestias mollitia ut. Aliquam aperiam corporis cumque debitis delectus dignissimos.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>“</span> 
+								</p>
+							</div>
+		
+						   <div class="testimonial-info">
+							   <h3 class="testimonial-title">
+									Testimonial 2
+								   <small>Web Developer</small>
+							   </h3>
+						   </div>
+						</div>
+
+						<button class="slide-button-dark" onclick="tSlider.slide(+1)"></button>
+					</div>
+
+					
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section section--portfolio1" id="contact">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+			</svg>
+			<div class="section__inner">
+				<div class="block">
+					<a class="pre" href="#contact"><span></span>CONTACT</a>
+					<h2>Say Hi, <br>If want to talk about</h2>
+					<h2 class="change-text"  id="footer-change-text">
+						<span class="active">Collaboration</span>
+						<span>Interesting&nbsp;Idea</span>
+						<span>New&nbsp;Project</span>
+					</h2>
+					<p class="lead">More links: <a href="https://www.linkedin.com/in/harshadsatra/">LinkedIn</a>, <a href="https://www.instagram.com/harshadsatra/">Instagram</a> and <a href="https://github.com/harshadsatra">GitHub</a>.</p>
+				</div>
+			</div>
+		</section>
+
+		<script src="assets/js/bundle-min.js" type="text/javascript"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/projects.js"></script>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@300;400;600&display=swap" onload="this.rel='stylesheet'" />
+	</body>
+</html>

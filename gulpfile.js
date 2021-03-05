@@ -13,6 +13,7 @@ const node_path = "node_modules/";
 const srcJS = [
   node_path + "jquery/dist/jquery.min.js", 
   node_path + "gsap/dist/gsap.min.js", 
+  node_path + "vue/dist/vue.js"
   //node_path + "waypoints/lib/jquery.waypoints.js", 
   //node_path + "swiper/swiper-bundle.min.js",
   //node_path + "aos/dist/aos.js"

@@ -201,7 +201,7 @@ $sideWidth: 50px;
   span.active {
     @include transition(all, .85s);
     opacity: 1;
-    clip: rect(0, 500px, 198px, 0px);
+    clip: rect(0, 600px, 198px, 0px);
   }
 }
 
@@ -1057,6 +1057,9 @@ p {
 
 #privacy-policy{
   padding-left: 10%;
+  .section__inner{
+    max-width: calc(100% - 10%)
+  }
   h1:not(.title){
     font-size: 25px;
     letter-spacing: 0.6px;
@@ -1075,6 +1078,7 @@ p {
   p, li{
     font-size: 16px;
     margin-bottom: 8px;
+    font-family: monospace;
     + h1{
       margin-top: 50px;
     }

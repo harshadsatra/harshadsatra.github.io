@@ -282,14 +282,16 @@ const tSlider = {
 		tSlider.showDivs(tSlider.slideIndex += n);
 	},
 	showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("testimonial");
-		if (n > x.length) {tSlider.slideIndex = 1}
-		if (n < 1) {slideIndex = x.length} ;
-		for (i = 0; i < x.length; i++) {
-		  x[i].classList.remove("active");
-		  x[i].classList.add("inactive");
+		let i;
+		const x = document.getElementsByClassName("testimonial");
+		if(x.length > 0){
+			if (n > x.length) {tSlider.slideIndex = 1}
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+			x[i].classList.remove("active");
+			x[i].classList.add("inactive");
+			}
+			x[tSlider.slideIndex - 1].classList.add("active");
 		}
-		x[tSlider.slideIndex - 1].classList.add("active");
 	}
 };

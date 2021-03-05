@@ -1,3 +1,10 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://harshadsatra.in/$1 [R,L]
+
+RewriteEngine On
+ErrorDocument 404 /404.html
+
 ## EXPIRES HEADER CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
