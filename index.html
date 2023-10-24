@@ -8,199 +8,50 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<title>HTML Template</title>
-		<meta name="robots" content="index, follow" />
-		<meta name="description" content="" />
-		<meta name="keyword" content="" />
+		<title>Harshad Satra - Web Developer</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Harshad is a proficient Front-end Enthusiast, with over 7 years of experience, and have an in-depth knowledge of various areas of development, making the Web a better one website/app after other ;)" />
+		<meta name="keywords" content="Harshad Satra,Harshad,Satra,front end developer,web developer,PHP,wordpress,bootstrap,HTML5,CSS3,html,css,javascript,jQuery,js,freelancer,magento,eCommerce" />
 		<meta name="author" content="Harshad Satra" />
-
-		<!-- Compiled and minified CSS 
-    		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    	-->
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<meta name="theme-color" content="#000000" />
-
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Harshad Satra" />
+		<meta name="theme-color" content="#111111" />
 		<style>
+
+
+			:root{
+				--black: #000000;
+				--red: #cc0000;
+				--green: #4e9a06;
+				--yellow: #c4a000;
+				--blue: #9cdcfe;
+				--magenta: #75507b;
+				--cyan: #06989a;
+				--white: #d3d7cf;
+				--orange: #ce9178;
+				--bright-black: #555753;
+				--bright-red: #ef2929;
+				--bright-green: #8ae234;
+				--bright-yellow: #fce94f;
+				--bright-blue: #32afff;
+				--bright-magenta: #ad7fa8;
+				--bright-cyan: #34e2e2;
+				--bright-white: #ffffff;
+			}
+			body {
+				-webkit-print-color-adjust: exact !important;
+				print-color-adjust: exact !important;
+			}
 			* {
 				padding: 0;
 				margin: 0;
+				background-color: #111111;
 			}
-
-			.wrapper {
-				position: relative;
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			#div-mask-front,
-			#div-mask-back {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-			}
-
-			#div-mask-front p,
-			#div-mask-back p {
-				color: rgba(255, 255, 255, 0.9);
-				font-size: 30px;
-			}
-
-			#div-mask-back {
-				--m1: 0.1%;
-				--m2: 0%;
-				--mask: radial-gradient(circle at var(--x, 50%) var(--y, 50%), black var(--m1), transparent var(--m2));
-				position: absolute;
-				width: 100%;
-				height: 100%;
-
-				-webkit-mask-image: var(--mask);
-				mask-image: var(--mask);
-			}
-
-			#div-mask-front h1 {
-				font-size: 80px;
-				color: transparent;
-				background: radial-gradient(circle at center, #f9ca9c 0.02em, white 0);
-				background-size: 0.25rem 0.25rem;
-				-webkit-background-clip: text;
-				background-clip: text;
-			}
-
-			#div-mask-back pre {
-				color: white;
-				font-size: 16px;
-			}
-
-			.area {
-				width: 100%;
-				height: 100vh;
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: -1;
-			}
-
-			.circles {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-			}
-
-			.circles li {
-				--color: rgba(255, 255, 255, 0.3);
-				position: absolute;
-				display: block;
-				list-style: none;
-				width: 20px;
-				height: 20px;
-				background: var(--color);
-				animation: animate 25s linear infinite;
-				bottom: -150px;
-			}
-
-			.circles li:nth-child(1) {
-				left: 25%;
-				width: 80px;
-				height: 80px;
-				animation-delay: 0s;
-			}
-
-			.circles li:nth-child(2) {
-				left: 10%;
-				width: 20px;
-				height: 20px;
-				animation-delay: 2s;
-				animation-duration: 12s;
-			}
-
-			.circles li:nth-child(3) {
-				left: 70%;
-				width: 20px;
-				height: 20px;
-				animation-delay: 4s;
-			}
-
-			.circles li:nth-child(4) {
-				left: 40%;
-				width: 60px;
-				height: 60px;
-				animation-delay: 0s;
-				animation-duration: 18s;
-			}
-
-			.circles li:nth-child(5) {
-				left: 65%;
-				width: 20px;
-				height: 20px;
-				animation-delay: 0s;
-			}
-
-			.circles li:nth-child(6) {
-				left: 75%;
-				width: 110px;
-				height: 110px;
-				animation-delay: 3s;
-			}
-
-			.circles li:nth-child(7) {
-				left: 35%;
-				width: 150px;
-				height: 150px;
-				animation-delay: 7s;
-			}
-
-			.circles li:nth-child(8) {
-				left: 50%;
-				width: 25px;
-				height: 25px;
-				animation-delay: 15s;
-				animation-duration: 45s;
-			}
-
-			.circles li:nth-child(9) {
-				left: 20%;
-				width: 15px;
-				height: 15px;
-				animation-delay: 2s;
-				animation-duration: 35s;
-			}
-
-			.circles li:nth-child(10) {
-				left: 85%;
-				width: 150px;
-				height: 150px;
-				animation-delay: 0s;
-				animation-duration: 11s;
-			}
-
-			@keyframes animate {
-				0% {
-					transform: translateY(0) rotate(0deg);
-					opacity: 1;
-					border-radius: 0;
-				}
-
-				100% {
-					transform: translateY(-1000px) rotate(720deg);
-					opacity: 0;
-					border-radius: 50%;
-				}
-			}
-
 			pre {
-				backdrop-filter: blur(15px) saturate(100%);
-				-webkit-backdrop-filter: blur(15px) saturate(100%);
-				border-radius: 12px;
-				background-color: rgba(68, 63, 63, 0.6);
-				padding: 2rem 1rem;
+				padding: 1.5rem;
+				white-space: pre-wrap;
+				font-size: 1.3rem;
+				color: var(--orange);
 			}
 
 			pre .variable {
@@ -208,117 +59,61 @@
 			}
 
 			pre .string {
-				color: #ce9178;
+				color: var(--orange);
 			}
 
-			pre .character {
-				color: #d4d4d4;
+			pre i {
+				color: var(--white);
+				font-style: normal;
 			}
 
 			pre .bracket {
-				color: #ffd700;
+				color: var(--bright-yellow);
 			}
 
 			pre .number {
 				color: #b5cea8;
 			}
+
+
+			pre a{
+				color: var(--bright-cyan);
+				text-decoration: none;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div class="area" style="position: fixed; background-color: #786d61">
-			<ul class="circles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="wrapper">
-			<div id="div-mask-front">
-				<h1>I'm Abu Bakar</h1>
-				<p>This page is about me, explore !</p>
-			</div>
-			<div id="div-mask-back" aria-hidden="true">
-				<div class="area" style="position: absolute; background-color: #444444">
-					<ul class="circles">
-						<li style="--color: linear-gradient(319deg, #bbff99 0%, #ffec99 37%, #ff9999 100%)"></li>
-						<li style="--color: linear-gradient(315deg, #d387ab 0%, #b279a7 74%)"></li>
-						<li style="--color: linear-gradient(315deg, #378b29 0%, #ffffff 74%)"></li>
-						<li style="--color: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%)"></li>
-						<li style="--color: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%)"></li>
-						<li style="--color: linear-gradient(315deg, #ffffff 0%, #274060 74%)"></li>
-						<li style="--color: linear-gradient(319deg, #c2eaba 0%, #c5f4e0 37%, #efc2cf 100%)"></li>
-						<li style="--color: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%)"></li>
-						<li style="--color: linear-gradient(315deg, #1dd1a1 0%, #d3d3d3 74%)"></li>
-						<li style="--color: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%)"></li>
-					</ul>
-				</div>
-				<pre>
-		  <span class="variable">name</span> <span class="character">=</span> <span class="string">"Abu Bakar"</span>
-		  <span class="variable">age</span> <span class="character">=</span> <span class="number">21</span>
-		  <span class="variable">profession</span> <span class="character">=</span> <span class="string">"Software Engineer & CyberSecurity Enthusiast"</span>
-		  <span class="variable">experties</span> <span class="character">=</span> <span class="string">"Developing Mobile, Desktop and Web Applications"</span>
-		  
-		  <span class="variable">skills</span> <span class="character">=</span> <span class="bracket">{</span>
-			  <span class="string">"Full-Stack Web Developer"</span> <span class="character">:</span> <span class="string">"HTML/CSS | Node/JS | Laravel | React..."</span><span class="character">,</span>
-			  <span class="string">"Desktop App Developer"</span> <span class="character">:</span> <span class="string">".Net | UWP | WPF | C# | C++ | Winform"</span><span class="character">,</span>
-			  <span class="string">"Mobile App Developer"</span> <span class="character">:</span> <span class="string">"Java | Kotlin | Flutter"</span><span class="character">,</span>
-			  <span class="string">"Game Developer"</span> <span class="character">:</span> <span class="string">"Unity | Godot | C++"</span><span class="character">,</span>
-			  <span class="string">"Cyber Security"</span> <span class="character">:</span> <span class="string">"Linux | Wireshark | Fiddler..."</span><span class="character">,</span>
-			  <span class="string">"Other"</span> <span class="character">:</span> <span class="string">"Python | Git/Github | GCP | Firebase..."</span>
-		  <span class="bracket">}</span>
-		  
-		  <span class="variable">hobbies</span> <span class="character">=</span> <span class="bracket">[</span>
-			  <span class="string">"Software Application Development"</span><span class="character">,</span>
-			  <span class="string">"Security Testing / Hacking"</span><span class="character">,</span>
-			  <span class="string">"Learning New Things"</span><span class="character">,</span>
-			  <span class="string">"Sharing Knowledge"</span><span class="character">,</span>
-			  <span class="string">"Spending Time With Family"</span>
-		  <span class="bracket">]</span>
-					  </pre>
-			</div>
-		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<pre>
+<span class="variable">name</span> <i>:</i> "Harshad Satra"
+<span class="variable">website</span> <i>:</i> <a href="https://harshadsatra.in/" class="link">harshadsatra.in</a></span>
+<span class="variable">github</span> <i>:</i> <a href="https://github.com/harshadsatra" class="link">/harshadsatra</a></span>
+<span class="variable">linkedin</span> <i>:</i> <a href="https://www.linkedin.com/in/harshadsatra/" class="link">/harshadsatra</a></span>
+<span class="variable">experience</span> <i>:</i> <span class="number">10+ years</span>
+<span class="variable">profession</span> <i>:</i> "Software Developer"
+<span class="variable">experties</span> <i>:</i> "Developing Websites and Applications"
+<span class="variable">about</span> <i>:</i> I am a proficient Web developer, with over 10 years of experience. I like to work on challenging projects in a rapidly growing organization with a dynamic and globally competitive environment that shall yield the twin benefits of job satisfaction and a steady-paced professional growth through hard work, research, skills and perseverance.
+<span class="variable">skills</span> <i>:</i> <span class="bracket">[</span>"HTML5", "CSS3", "SCSS", "JS", "PHP"<span class="bracket">]</span>
+<span class="variable">tech-stack</span> <i>:</i> <span class="bracket">{</span>
+	"Framework" <i>:</i> "VUE | Nuxt.js | React | Next.js",
+	"JS" <i>:</i> "GSAP, Lottie, ScrollTrigger, D3.js and many more"<i>,</i>
+	"CSS" <i>:</i> "Tailwind, Bootstrap"<i>,</i>
+	"PHP"<i>:</i> "Wordpress, Codeignitor, Laravel"<i>,</i>
+	"Version Control"<i>:</i> "Github, Gitlab, Bitbucket"<i>,</i>
+	"Deployments": <i>:</i> "AWS, GCP, Digital Ocean, VERCEL, Netlify"<i>,</i> 
+	"Other"<i>:</i> "Node.js, Express.js, Webpack, gulp"
+<span class="bracket">}</span>
 
-		<script>
-			const mask = document.querySelector("#div-mask-back")
-			const tl = gsap.timeline()
-
-			tl.to(mask, {
-				"--m1": "20%",
-				delay: 2,
-				duration: 0.5,
-				ease: "back.out(2)",
-			}).to(mask, {
-				"--m2": "30%",
-				duration: 0.5,
-				delay: 0.5,
-				ease: "back.out(2)",
-			})
-
-			window.addEventListener("mousemove", (e) => {
-				const { clientX, clientY } = e
-				const x = Math.round((clientX / window.innerWidth) * 100)
-				const y = Math.round((clientY / window.innerHeight) * 100)
-
-				gsap.to(mask, {
-					"--x": `${x}%`,
-					"--y": `${y}%`,
-					duration: 0.3,
-					ease: "sine.out",
-				})
-			})
-
-			/* CREDIT */
-			// background animation : https://codepen.io/alvarotrigo/pen/GRvYNax
-			// mask : https://codepen.io/kartikth40/pen/XWMOReZ
-		</script>
+<span class="variable">tools</span> <i>:</i> <span class="bracket">[</span>
+	"Visual Studio Code"<i>,</i>
+	"Terminal | Command Prompt"<i>,</i>
+	"Github Desktop"<i>,</i>
+	"FileZilla"<i>,</i>
+	"Figma"<i>,</i>
+	"Slack"</i>
+<span class="bracket">]</span>
+</pre>
+		<!-- Reference: https://codepen.io/Muhammad-Abu-Bakar-the-looper/pen/VwVROBO?editors=0010 -->
+		<!-- Data: https://harshadsatra.in/Harshad-Satra-Resume.pdf -->
 	</body>
 </html>
