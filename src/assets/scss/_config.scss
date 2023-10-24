@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+$primary-font: "Source Sans Pro", sans-serif;
+$heading-font: "Source Sans Pro", sans-serif;
+$primary-font-size: 14px;
+$primary-font-weight: 400;
+
+
+$blue: #5192f2;
+$blue-light: #eef4fd;
+$white: #ffffff;
+$black: #1A202C;
+$gray : #f2f2f2;
+$body-text-dark: #4A5568;
+$body-text-light: #718196;
+
+$colours :(
+  primary: $blue,
+  blue: $blue,
+  blue-light: $blue-light,
+  cwhite: $white,
+  cblack: $black,
+  gray: $gray,
+);
+
+$grayShades:(
+  100: #F7FAFC,
+  200: #EDF2F7,
+  300: #E2E8F0,
+  400: #CBD5E0,
+  500: #A0AEC0,
+  600: #718096,
+  700: #4A5568,
+  800: #2D3748,
+  900: #1A202C,
+);
+
+$fonts : (10,11,12,14,18,18,20,24,36,40,44,48,50,55,60);
+@mixin font-classes {
+  @each $i in $fonts {
+    .f-#{$i} {font-size: #{$i}px;}
+  }
+}
+@include font-classes;
+
+$font-weights: (100,200,300,400,500,600,700);
+@mixin font-weight {
+  @each $i in $font-weights {
+    .f-#{$i} {font-weight: #{$i};}
+  }
+}
+@include font-weight;
+
+$sizes: 12;
+$spacers : (0, 4,8,12,16,24,32,36,48,60,64,80,120,150,180);
+$space-type-map: (
+  m: margin,
+  p: padding,
+);
+$space-dir-map: (
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+);
+
+
+$transition: all 0.3s !default;
+@mixin transition {
+  transition: $transition;
+}
