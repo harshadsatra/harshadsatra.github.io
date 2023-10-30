@@ -5,7 +5,6 @@
     "headers": [
       {
         "source": "/(.*)",
-        "destination": "/404.html",
         "headers": [
           {
             "key": "Content-Security-Policy",
