@@ -7,6 +7,7 @@ const purgecss = require('gulp-purgecss');
 const concat = require("gulp-concat");
 const minify = require("gulp-minify");
 const rename = require('gulp-rename')
+const strip = require("gulp-strip-comments");
 
 
 
@@ -31,6 +32,7 @@ gulp.task("pack-js", function () {
 const htmlPartial = require("gulp-html-partial");
 gulp.task("html", function () {
   return gulp.src(["src/**/*.html", "!src/partials/**/*.html"])
+    .pipe(strip())
     .pipe(
       htmlPartial({
         basePath: "src/partials/",

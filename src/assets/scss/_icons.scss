@@ -1,0 +1,56 @@
+.sprite{
+    width: 100px; height: 100px;
+    display: block;
+    &.aws {
+        background: url('../img/css_sprites.png') -10px -10px;
+    }
+    &.ts {
+        background: url('../img/css_sprites.png') -10px -130px;
+    }
+    &.bs5 {
+        background: url('../img/css_sprites.png') -10px -250px;
+    }
+    &.css3{
+        background: url('../img/css_sprites.png') -10px -490px;
+    }
+    &.vue{
+        background: url('../img/css_sprites.png') -10px -610px;
+    }
+    &.github{
+        background: url('../img/css_sprites.png') -10px -730px;
+    }
+    &.html5{
+        background: url('../img/css_sprites.png') -10px -850px;
+    }
+    &.node{
+        background: url('../img/css_sprites.png') -10px -970px;
+    }
+    &.next{
+        background: url('../img/css_sprites.png') -10px -1090px;
+    }
+    &.js{
+        background: url('../img/css_sprites.png') -10px -1210px;
+    }
+    &.react{
+        background: url('../img/css_sprites.png') -10px -1330px;
+    }
+    &.tailwind{
+        background: url('../img/css_sprites.png') -10px -1450px;
+    }
+    &.gulp{
+        background: url('../img/css_sprites.png') -10px -1570px;
+    }
+    &.python{
+        background: url('../img/css_sprites.png') -10px -1690px;
+    }
+    &.nuxt{
+        background: url('../img/css_sprites.png') -10px -1810px;
+    }
+    &.webpack{
+        background: url('../img/css_sprites.png') -10px -1930px;
+    }
+    &.wordpress{
+        background: url('../img/css_sprites.png') -10px -2050px;
+    }
+
+}

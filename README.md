@@ -34,3 +34,24 @@ Collaborators - Freelancers / agencies
 Portfolio / Projects
 What Clients say
 Contact Me
+
+
+## Projects to add
+https://www.earlymanfilm.com/
+https://nubecirrus.com/home
+https://venturedesign.nyuct.com/
+https://priyankapoddar.com/
+https://betterearth.asia/
+https://bridgepostworks.com/
+
+
+HTML5
+CSS3
+SCSS
+JS
+VUE.js
+NUXT
+NODE.js
+Wordpress
+React
+Next
