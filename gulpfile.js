@@ -4,10 +4,26 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require("gulp-postcss");
 const purgecss = require('gulp-purgecss');
+const htmlmin = require('gulp-htmlmin');
 const concat = require("gulp-concat");
 const minify = require("gulp-minify");
 const rename = require('gulp-rename')
 const strip = require("gulp-strip-comments");
+const uglify = require('gulp-uglify-es').default;
+
+
+// Set the browser that you want to support
+const AUTOPREFIXER_BROWSERS = [
+  'ie >= 10',
+  'ie_mob >= 10',
+  'ff >= 30',
+  'chrome >= 34',
+  'safari >= 7',
+  'opera >= 23',
+  'ios >= 7',
+  'android >= 4.4',
+  'bb >= 10'
+];
 
 
 
@@ -38,6 +54,10 @@ gulp.task("html", function () {
         basePath: "src/partials/",
       })
     )
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest("public"));
 });
 
@@ -52,6 +72,20 @@ gulp.task('scss', function () {
     }).on("error", sass.logError))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("public/assets/css/"));
+});
+
+// To Remove Unused CSS 
+gulp.task('purgecss', () => {
+  return gulp.src(['public/assets/css/main.css','!public/assets/css/main.min.css'])
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(purgecss({
+      content: ['public/**/*.html', 'public/**/*.js'],
+      css: [], // css
+      whitelist: ['.active', '.in', '.out']
+    }))
+    .pipe(gulp.dest('public/assets/css'))
 });
 
 // Optimize & Copy Images
@@ -78,6 +112,8 @@ gulp.task('copy-vid', function () {
 // Copy Fonts
 gulp.task('copy-src-js', function () {
   return gulp.src('src/assets/js/**/*.*')
+    .pipe(strip())
+    .pipe(uglify())
     .pipe(gulp.dest('./public/assets/js/'));
 });
 
@@ -87,25 +123,9 @@ gulp.task('copy-actions', function () {
     .pipe(gulp.dest('./public/actions/'));
 });
 
-// To Remove Unused CSS 
-gulp.task('purgecss', () => {
-  return gulp.src(['public/assets/css/main.css','!public/assets/css/main.min.css'])
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(purgecss({
-      content: ['public/**/*.html', 'public/**/*.js'],
-      css: [], // css
-      whitelist: ['.active', '.in', '.out']
-    }))
-    .pipe(gulp.dest('public/assets/css'))
-});
-
-
 // Build Complete Public Folder
 // gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-img','copy-font','scss'));
 gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-vid','copy-img','copy-font','scss' ,'purgecss'));
-
 
 // Watch Task to Update Files
 gulp.task('watch', function() {
