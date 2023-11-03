@@ -10258,10 +10258,12 @@ body:not(.is-mobile) .tt-style-switch:hover {
 }
 
 .about-copy {
+	color: #c5c5c5;
 	&:hover {
 		p {
+			color: #c5c5c5;
 			opacity: 0.4;
-			transition: all ease-in 0.35s;
+			transition: opacity ease-in 0.35s;
 			&:hover {
 				opacity: 1;
 			}
@@ -10274,6 +10276,7 @@ body:not(.is-mobile) .tt-style-switch:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 7s infinite linear;
+	opacity: 1 !important;
 }
 
 @-webkit-keyframes hue {
