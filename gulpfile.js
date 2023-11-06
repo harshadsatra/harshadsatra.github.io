@@ -2,7 +2,6 @@ const gulp = require('gulp');
 // var func = require('./compiler/helpers');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
-const postcss = require("gulp-postcss");
 const purgecss = require('gulp-purgecss');
 const htmlmin = require('gulp-htmlmin');
 const concat = require("gulp-concat");
@@ -11,38 +10,35 @@ const rename = require('gulp-rename')
 const strip = require("gulp-strip-comments");
 const uglify = require('gulp-uglify-es').default;
 
-
-// Set the browser that you want to support
-const AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
-  'ie_mob >= 10',
-  'ff >= 30',
-  'chrome >= 34',
-  'safari >= 7',
-  'opera >= 23',
-  'ios >= 7',
-  'android >= 4.4',
-  'bb >= 10'
-];
-
-
-
 // Node Modules JS to build.js Bundle
 // Reference : https://www.toptal.com/javascript/optimize-js-and-css-with-gulp
 const node_path = "node_modules/";
+const asset_path = "src/assets/js/";
 const srcJS = [
-  node_path + "jquery/dist/jquery.min.js", 
-  node_path + "@popperjs/core/dist/umd/popper.min.js", 
-  //node_path + "bootstrap/dist/js/bootstrap.min.js", 
-  node_path + "waypoints/lib/jquery.waypoints.js", 
-  node_path + "waypoints/lib/shortcuts/sticky.min.js", 
-  node_path + "floatthead/dist/jquery.floatThead.min.js",
-  node_path + "slick-carousel/slick/slick.min.js",
-  node_path + "aos/dist/aos.js"
+  node_path + "jquery/dist/jquery.min.js",
+  asset_path + "gsap.min.js",
+  asset_path + "ScrollToPlugin.min.js",
+  asset_path + "ScrollTrigger.min.js",
+  asset_path + "smooth-scrollbar.js",
+  asset_path + "swiper-bundle.min.js",
+  asset_path + "imagesloaded.pkgd.min.js",
+  asset_path + "isotope.pkgd.min.js",
+  asset_path + "packery-mode.pkgd.min.js",
+  asset_path + "lightgallery-all.min.js",
+  asset_path + "jquery.mousewheel.min.js",
 ];
 
 gulp.task("pack-js", function () {
   return gulp.src(srcJS).pipe(concat("bundle.js")).pipe(minify()).pipe(gulp.dest("public/assets/js"));
+});
+
+const deferJS = [
+  node_path + "jquery-validation/dist/jquery.validate.min.js",
+  "public/assets/js/contact.js"
+];
+
+gulp.task("defer-js", function () {
+  return gulp.src(deferJS).pipe(concat("defer.js")).pipe(minify()).pipe(gulp.dest("public/assets/js"));
 });
 
 const htmlPartial = require("gulp-html-partial");
@@ -88,10 +84,6 @@ gulp.task('purgecss', () => {
     .pipe(gulp.dest('public/assets/css'))
 });
 
-// Optimize & Copy Images
-// Reference : https://www.npmjs.com/package/gulp-imagemin
-
-// const imagemin = require('gulp-imagemin');
 gulp.task('copy-img', function () {
   return gulp.src('src/assets/img/**/*.*')
     .pipe(gulp.dest('./public/assets/img/'));
@@ -125,7 +117,7 @@ gulp.task('copy-actions', function () {
 
 // Build Complete Public Folder
 // gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-img','copy-font','scss'));
-gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-vid','copy-img','copy-font','scss' ,'purgecss'));
+gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-vid','copy-img','copy-font','scss' ,'purgecss','defer-js',));
 
 // Watch Task to Update Files
 gulp.task('watch', function() {
@@ -138,6 +130,7 @@ gulp.task('watch', function() {
   gulp.watch('src/assets/font/**/*.*', gulp.series('copy-font'));
   gulp.watch('src/**/*.html', gulp.series('html'));
   gulp.watch('gulpfile.js', gulp.series('pack-js'));
+  gulp.watch('gulpfile.js', gulp.series('defer-js'));
 });
 
 // Local Server
