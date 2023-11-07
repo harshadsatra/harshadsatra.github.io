@@ -1,4 +1,4 @@
-// Universal PHP Mail Feedback Script 
+// Universal PHP Mail Feedback Script
 // (https://github.com/agragregra/uniMail)
 // ========================================
 
@@ -27,29 +27,84 @@ jQuery.extend(jQuery.validator.messages, {
 });
 */
 
-const el = document.getElementById("tt-contact-form");
-if(el){
-    $("#tt-contact-form").validate({
-        messages: {
-            Name: "Please enter your name",
-            Email: {
-                required: "Please enter email address"
-            },
-            Subject: "Please select what is this about",
-            Message: "It would be helpful if you can share some details"
-        },
-        submitHandler: function(form, event) {
+const el = document.getElementById("tt-contact-form")
+if (el) {
+	$("#tt-contact-form").validate({
+		messages: {
+			Name: "Please enter your name",
+			Email: {
+				required: "Please enter email address",
+			},
+			Subject: "Please select what is this about",
+			Message: "It would be helpful if you can share some details",
+		},
+		submitHandler: function (form, event) {
 
-            event.preventDefault();
-            // Form Data
-            const arr = $(form).serializeArray();
-            const formData = {
-                Src: window.location.href
+            const hasContacted = localStorage.getItem('contacted')
+            if(hasContacted === 'YES'){
+                console.log("Already Contacted");
+                submitBtn.innerHTML = "Sent"
+                submitBtn.dataset.hover = "Sent"
+                submitBtn.disabled = false;
+                 // clear all values
+                 const d = document.querySelectorAll('.tt-form-control')
+                 d.forEach(el => {
+                     el.value = ''
+                 })
+                return;
             }
-            arr.forEach(e => {
-                formData[e.name] = e.value
-            })
 
+			event.preventDefault()
+			// Form Data
+			const arr = $(form).serializeArray()
+			const formData = {
+				src: window.location.href,
+			}
+			arr.forEach((e) => {
+				formData[e.name] = e.value
+			})
+
+			const myHeaders = new Headers()
+			myHeaders.append("Content-Type", "application/json")
+
+			var raw = JSON.stringify({
+				name: "Name1",
+				email: "email@xx.com",
+				src: "Src",
+				subject: "Subject",
+				message: "Message",
+			})
+
+			var requestOptions = {
+				method: "POST",
+				headers: myHeaders,
+				body: raw,
+				redirect: "follow",
+			}
+
+			fetch("https://cms.chdconsultancy.in/items/harshad_enquiry", requestOptions)
+				.then((response) => response.text())
+				.then((result) => {
+                    console.log(result)
+                    submitBtn.innerHTML = "Sent"
+                    submitBtn.dataset.hover = "Sent"
+                    submitBtn.disabled = false;
+                     // clear all values
+                    const d = document.querySelectorAll('.tt-form-control')
+                    d.forEach(el => {
+                        el.value = ''
+                    })
+                    localStorage.setItem('contacted', 'YES');
+                })
+				.catch((error) => {
+                    console.log("error", error)
+                    submitBtn.innerHTML = "Retry"
+                    submitBtn.dataset.hover = "Retry"
+                    submitBtn.disabled = true;
+
+                })
+
+			/*
             // Header
             const myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
@@ -97,7 +152,8 @@ if(el){
 
             console.log("Submitting Form");
             //your code
-            return false;
-        },
-    });
+            */
+			return false
+		},
+	})
 }
