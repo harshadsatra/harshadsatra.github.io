@@ -86,7 +86,7 @@ if (el) {
 			fetch("https://cms.chdconsultancy.in/items/harshad_enquiry", requestOptions)
 				.then((response) => response.text())
 				.then((result) => {
-                    console.log(result)
+                    // console.log(result)
                     submitBtn.innerHTML = "Sent"
                     submitBtn.dataset.hover = "Sent"
                     submitBtn.disabled = false;
@@ -98,7 +98,7 @@ if (el) {
                     localStorage.setItem('contacted', 'YES');
                 })
 				.catch((error) => {
-                    console.log("error", error)
+                    console.error("error", error)
                     submitBtn.innerHTML = "Retry"
                     submitBtn.dataset.hover = "Retry"
                     submitBtn.disabled = true;
