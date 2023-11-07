@@ -67,18 +67,19 @@ if (el) {
 			const myHeaders = new Headers()
 			myHeaders.append("Content-Type", "application/json")
 
+            /*
 			var raw = JSON.stringify({
 				name: "Name1",
 				email: "email@xx.com",
 				src: "Src",
 				subject: "Subject",
 				message: "Message",
-			})
+			}) */
 
 			var requestOptions = {
 				method: "POST",
 				headers: myHeaders,
-				body: raw,
+				body: JSON.stringify(formData),
 				redirect: "follow",
 			}
 
