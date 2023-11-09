@@ -117,7 +117,7 @@ gulp.task('copy-actions', function () {
 
 // Build Complete Public Folder
 // gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-img','copy-font','scss'));
-gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-vid','copy-img','copy-font','scss' ,'purgecss','defer-js',));
+gulp.task('default', gulp.series('html','copy-src-js','pack-js','copy-vid','copy-img','copy-font','scss' ,'purgecss','defer-js',));
 
 // Watch Task to Update Files
 gulp.task('watch', function() {
