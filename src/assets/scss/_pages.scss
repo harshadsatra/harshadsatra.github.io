@@ -4666,6 +4666,12 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 	}
 }
 
+@media (max-width: 1024px) {
+	.portfolio-split-images {
+		display: none;
+	}
+}
+
 .pspl-images-inner {
 	position: absolute;
 	top: 0;
@@ -4880,7 +4886,7 @@ body.pi-full-on:not(.page-header-on) .portfolio-interactive-ghost {
 }
 @media (max-width: 1024px) {
 	.pspl-ghost {
-		display: none;
+		// display: none;
 	}
 }
 
@@ -6636,7 +6642,12 @@ body:not(.tt-np-image-on) .tt-np-ghost {
 /* Logo wall on smaller screens */
 @media (max-width: 767px) {
 	.tt-logo-wall > li {
-		width: 50% !important;
+		// width: 50% !important;
+		width: 33.33% !important;
+		a{
+			pointer-events: none;
+			transform: scale(0.6);
+		}
 	}
 }
 
@@ -10265,6 +10276,16 @@ body:not(.is-mobile) .tt-style-switch:hover {
 			opacity: 0.4;
 			transition: opacity ease-in 0.35s;
 			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.about-copy {
+		&:hover{
+			p{
 				opacity: 1;
 			}
 		}
