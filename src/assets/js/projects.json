@@ -1,646 +1,505 @@
 [
-    {
-        "URL": "https://sachinguptabuildcon.com/",
-        "Year": 2019,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Codeignitor",
-            "PHP",
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Sachin Gupta Buildcon",
-        "Type": "HTML",
-        "tagList": "Codeignitor,PHP,HTML"
-    },
-    {
-        "URL": "https://www.creativenewtech.com/",
-        "Year": 2020,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress",
-            "Custom Theme",
-            "ECommerce"
-        ],
-        "isActive": true,
-        "ProjectName": "Creative Newtech Limited",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Custom Theme,ECommerce"
-    },
-    {
-        "URL": "https://www.earlymanfilm.com/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Vue",
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Early Man Film",
-        "Type": "Vue",
-        "tagList": "Vue,HTML"
-    },
-    {
-        "URL": "https://thecommontable.eu/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "The Common Table",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://nubecirrus.com/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Wordpress",
-            "Angular"
-        ],
-        "isActive": true,
-        "ProjectName": "Nube Cirrus",
-        "Type": "Angular",
-        "tagList": "HTML,Wordpress,Angular"
-    },
-    {
-        "URL": "https://lokall.place/",
-        "Year": 2021,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "HTML",
-            "Creative",
-            "React"
-        ],
-        "isActive": true,
-        "ProjectName": "Lokall",
-        "Type": "HTML",
-        "tagList": "HTML,Creative,React"
-    },
-    {
-        "URL": "https://spaziobressan.com/",
-        "Year": 2019,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Spazio Bressan",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://harshadsatra.in/nyuct/digivalet-microsite",
-        "Year": 2022,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "HTML",
-            "Customization"
-        ],
-        "isActive": true,
-        "ProjectName": "DigiValet",
-        "Type": "Wordpress",
-        "tagList": "HTML,Customization"
-    },
-    {
-        "URL": "https://interoceanventures.com/",
-        "Year": 2018,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Google Maps"
-        ],
-        "isActive": true,
-        "ProjectName": "Inter-venture Ocean",
-        "Type": "HTML",
-        "tagList": "HTML,Google Maps"
-    },
-    {
-        "URL": "https://hypericeindia.in/",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Custom Theme",
-            "Shopify API",
-            "ECommerce"
-        ],
-        "isActive": true,
-        "ProjectName": "Hyperice India",
-        "Type": "Shopify",
-        "tagList": "Custom Theme,Shopify API,ECommerce"
-    },
-    {
-        "URL": "http://www.epigeneres.com/home/",
-        "Year": 2017,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML"
-        ],
-        "ProjectName": "Epigeneres",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://netalyse.com/",
-        "Year": 2017,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Netalyse",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://headlightindia.com/",
-        "Year": 2019,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML",
-            "Creative"
-        ],
-        "isActive": true,
-        "ProjectName": "Head Light India",
-        "Type": "HTML",
-        "tagList": "HTML,Creative"
-    },
-    {
-        "URL": "https://ramshaqamar.com/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Ramsha Qamar Portfolio",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://www.interplastica.com/",
-        "Year": 2016,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Interplastica",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://www.textrend.in/",
-        "Year": 2015,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "Wordpress"
-        ],
-        "ProjectName": "Textrend",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://www.yellowslice.in/",
-        "Year": 2020,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML",
-            "Lottie Animations"
-        ],
-        "isActive": true,
-        "ProjectName": "Yellow Slice",
-        "Type": "HTML",
-        "tagList": "HTML,Lottie Animations"
-    },
-    {
-        "URL": "https://healthup.care/",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress Headless CMS",
-            "React.js",
-            "Next.js"
-        ],
-        "isActive": true,
-        "ProjectName": "HealthUp Care Website",
-        "Type": "Next.js",
-        "tagList": "Wordpress Headless CMS,React.js,Next.js"
-    },
-    {
-        "URL": "https://www.ilovejaisalmer.com/desertfest2021/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Vue"
-        ],
-        "isActive": true,
-        "ProjectName": "Jaisalmer Desert Festival",
-        "Type": "HTML",
-        "tagList": "HTML,Vue"
-    },
-    {
-        "URL": "https://theahimsaspace.com/",
-        "Year": 2019,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "ProjectName": "The Ahimsa Space",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://sproutcreativity.online/",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Next.js",
-            "Strapi"
-        ],
-        "isActive": true,
-        "ProjectName": "Sprout Creativity",
-        "Type": "Next.js",
-        "tagList": "Next.js,Strapi"
-    },
-    {
-        "URL": "https://planetxplorium.com/",
-        "Year": 2023,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Planet Xplorium",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://inordinary.in/",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress",
-            "Custom Theme",
-            "ECommerce"
-        ],
-        "isActive": true,
-        "ProjectName": "InOrdinary Store",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Custom Theme,ECommerce"
-    },
-    {
-        "URL": "https://www.bridgepostworks.com/",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Nuxt.js",
-            "HTML",
-            "Directus CMS"
-        ],
-        "isActive": true,
-        "ProjectName": "Bridge Postworks",
-        "Type": "Vue",
-        "tagList": "Nuxt.js,HTML,Directus CMS"
-    },
-    {
-        "URL": "https://join.quomi.com/",
-        "Year": 2019,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "HTML",
-            "Creative"
-        ],
-        "isActive": true,
-        "ProjectName": "QUOMI",
-        "Type": "HTML",
-        "tagList": "HTML,Creative"
-    },
-    {
-        "URL": "https://seacare.co.in/",
-        "Year": 2015,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Google Maps",
-            "API",
-            "PHP"
-        ],
-        "isActive": true,
-        "ProjectName": "Seacare",
-        "Type": "Core PHP",
-        "tagList": "HTML,Google Maps,API,PHP"
-    },
-    {
-        "URL": "https://aishwaryarathore.com/",
-        "Year": 2017,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress",
-            "Portfolio"
-        ],
-        "isActive": true,
-        "ProjectName": "Aishwariya Rathore Portfolio",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Portfolio"
-    },
-    {
-        "URL": "https://schooloflight.in/",
-        "Year": 2019,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "ProjectName": "School Of Light",
-        "Type": "HTML",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://www.foodhallcookerystudio.com/",
-        "Year": 2019,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "Wordpress",
-            "Custom Theme"
-        ],
-        "isActive": true,
-        "ProjectName": "Foodhall Cookery Studio",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Custom Theme"
-    },
-    {
-        "URL": "https://opa.marketing",
-        "Year": 2022,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Dashboard",
-            "Website"
-        ],
-        "isActive": true,
-        "ProjectName": "OPA Influencer Marketing",
-        "Type": "React",
-        "tagList": "Dashboard,Website"
-    },
-    {
-        "URL": "https://betterearth.asia/",
-        "Year": 2023,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Better Earth Coalition",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://waterandlight.in/",
-        "Year": 2020,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "ProjectName": "Water and Light",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://researchandesignstudio.io/",
-        "Year": 2022,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "HTML",
-            "Customization"
-        ],
-        "isActive": true,
-        "ProjectName": "R&D Studio",
-        "Type": "Wordpress",
-        "tagList": "HTML,Customization"
-    },
-    {
-        "URL": "https://sandeshpalkar.com/portfolio/",
-        "Year": 2018,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Portfolio"
-        ],
-        "isActive": true,
-        "ProjectName": "Sandesh Palkar Portfolio",
-        "Type": "HTML",
-        "tagList": "HTML,Portfolio"
-    },
-    {
-        "URL": "http://aadiproperties.in/",
-        "Year": 2016,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Aadi Properties",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://dreamknots.in/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Dream Knots",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://www.gautamsachdeva.net/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Gautam Sachdeva",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://venturedesign.nyuct.com/",
-        "Year": 2019,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "HTML",
-            "Creative"
-        ],
-        "isActive": true,
-        "ProjectName": "Venture Design",
-        "Type": "HTML",
-        "tagList": "HTML,Creative"
-    },
-    {
-        "URL": "https://www.cfosme.in/",
-        "Year": 2018,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML"
-        ],
-        "ProjectName": "CFOSME",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://priyankapoddar.com/",
-        "Year": 2016,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress",
-            "Portfolio"
-        ],
-        "isActive": true,
-        "ProjectName": "Priyanka Poddar Portfolio",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Portfolio"
-    },
-    {
-        "URL": "https://dollyjain.com/",
-        "Year": 2019,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML",
-            "Wordpress",
-            "Custom Theme"
-        ],
-        "isActive": true,
-        "ProjectName": "Dolly Jain",
-        "Type": "Wordpress",
-        "tagList": "HTML,Wordpress,Custom Theme"
-    },
-    {
-        "URL": "http://dhordedeshmukh.com/",
-        "Year": 2023,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Dhorde Deshmukh",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "http://goldenporch.com/",
-        "Year": 2016,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML",
-            "Creative"
-        ],
-        "isActive": true,
-        "ProjectName": "Golden Porch",
-        "Type": "HTML",
-        "tagList": "HTML,Creative"
-    },
-    {
-        "URL": "https://harshadsatra.in/",
-        "Year": 2020,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress",
-            "Portfolio"
-        ],
-        "isActive": true,
-        "ProjectName": "Harshad Satra Portfolio",
-        "Type": "Wordpress",
-        "tagList": "Wordpress,Portfolio"
-    },
-    {
-        "URL": "https://www.designmortals.com/",
-        "Year": 2017,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Design Mortals",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://rinavaa.com/",
-        "Year": 2021,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Rinavaa Technologies",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://www.leobuilders.in/",
-        "Year": 2016,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Leo Builders",
-        "Type": "HTML",
-        "tagList": "HTML"
-    },
-    {
-        "URL": "https://thekitchenartisan.com/",
-        "Year": 2019,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML",
-            "PHP"
-        ],
-        "ProjectName": "The Kitchen Artisan",
-        "Type": "HTML",
-        "tagList": "HTML,PHP"
-    },
-    {
-        "URL": "https://truescalecapital.com/",
-        "Year": 2021,
-        "ProjectAs": "NYUCT Design Labs",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "True Scale",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "https://ikarialiving.in/",
-        "Year": 2023,
-        "ProjectAs": "Freelance",
-        "Tags": [
-            "Wordpress"
-        ],
-        "isActive": true,
-        "ProjectName": "Ikaria Living",
-        "Type": "Wordpress",
-        "tagList": "Wordpress"
-    },
-    {
-        "URL": "http://auxigengroup.com/",
-        "Year": 2016,
-        "ProjectAs": "Yellowslice",
-        "Tags": [
-            "HTML"
-        ],
-        "isActive": true,
-        "ProjectName": "Auxigen Group",
-        "Type": "HTML",
-        "tagList": "HTML"
-    }
+	{
+		"URL": "https://sachinguptabuildcon.com/",
+		"Year": 2019,
+		"ProjectAs": "Freelance",
+		"Tags": ["Codeignitor", "PHP", "HTML"],
+		"isActive": true,
+		"ProjectName": "Sachin Gupta Buildcon",
+		"Type": "HTML",
+		"tagList": "Codeignitor,PHP,HTML"
+	},
+	{
+		"URL": "https://www.creativenewtech.com/",
+		"Year": 2020,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress", "Custom Theme", "ECommerce"],
+		"isActive": true,
+		"ProjectName": "Creative Newtech Limited",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Custom Theme,ECommerce"
+	},
+	{
+		"URL": "https://www.earlymanfilm.com/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["Vue", "HTML"],
+		"isActive": true,
+		"ProjectName": "Early Man Film",
+		"Type": "Vue",
+		"tagList": "Vue,HTML"
+	},
+	{
+		"URL": "https://thecommontable.eu/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "The Common Table",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://nubecirrus.com/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Wordpress", "Angular"],
+		"isActive": true,
+		"ProjectName": "Nube Cirrus",
+		"Type": "Angular",
+		"tagList": "HTML,Wordpress,Angular"
+	},
+	{
+		"URL": "https://lokall.place/",
+		"Year": 2021,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["HTML", "Creative", "React"],
+		"isActive": true,
+		"ProjectName": "Lokall",
+		"Type": "HTML",
+		"tagList": "HTML,Creative,React"
+	},
+	{
+		"URL": "https://spaziobressan.com/",
+		"Year": 2019,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Spazio Bressan",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://www.harshadsatra.in/nyuct/digivalet-microsite",
+		"Year": 2022,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["HTML", "Customization"],
+		"isActive": true,
+		"ProjectName": "DigiValet",
+		"Type": "Wordpress",
+		"tagList": "HTML,Customization"
+	},
+	{
+		"URL": "https://interoceanventures.com/",
+		"Year": 2018,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Google Maps"],
+		"isActive": true,
+		"ProjectName": "Inter-venture Ocean",
+		"Type": "HTML",
+		"tagList": "HTML,Google Maps"
+	},
+	{
+		"URL": "https://hypericeindia.in/",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Custom Theme", "Shopify API", "ECommerce"],
+		"isActive": true,
+		"ProjectName": "Hyperice India",
+		"Type": "Shopify",
+		"tagList": "Custom Theme,Shopify API,ECommerce"
+	},
+	{
+		"URL": "http://www.epigeneres.com/home/",
+		"Year": 2017,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML"],
+		"ProjectName": "Epigeneres",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://netalyse.com/",
+		"Year": 2017,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Netalyse",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://headlightindia.com/",
+		"Year": 2019,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML", "Creative"],
+		"isActive": true,
+		"ProjectName": "Head Light India",
+		"Type": "HTML",
+		"tagList": "HTML,Creative"
+	},
+	{
+		"URL": "https://ramshaqamar.com/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Ramsha Qamar Portfolio",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://www.interplastica.com/",
+		"Year": 2016,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Interplastica",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://www.textrend.in/",
+		"Year": 2015,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["Wordpress"],
+		"ProjectName": "Textrend",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://www.yellowslice.in/",
+		"Year": 2020,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML", "Lottie Animations"],
+		"isActive": true,
+		"ProjectName": "Yellow Slice",
+		"Type": "HTML",
+		"tagList": "HTML,Lottie Animations"
+	},
+	{
+		"URL": "https://healthup.care/",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress Headless CMS", "React.js", "Next.js"],
+		"isActive": true,
+		"ProjectName": "HealthUp Care Website",
+		"Type": "Next.js",
+		"tagList": "Wordpress Headless CMS,React.js,Next.js"
+	},
+	{
+		"URL": "https://www.ilovejaisalmer.com/desertfest2021/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Vue"],
+		"isActive": true,
+		"ProjectName": "Jaisalmer Desert Festival",
+		"Type": "HTML",
+		"tagList": "HTML,Vue"
+	},
+	{
+		"URL": "https://theahimsaspace.com/",
+		"Year": 2019,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"ProjectName": "The Ahimsa Space",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://sproutcreativity.online/",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Next.js", "Strapi"],
+		"isActive": true,
+		"ProjectName": "Sprout Creativity",
+		"Type": "Next.js",
+		"tagList": "Next.js,Strapi"
+	},
+	{
+		"URL": "https://planetxplorium.com/",
+		"Year": 2023,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Planet Xplorium",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://inordinary.in/",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress", "Custom Theme", "ECommerce"],
+		"isActive": true,
+		"ProjectName": "InOrdinary Store",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Custom Theme,ECommerce"
+	},
+	{
+		"URL": "https://www.bridgepostworks.com/",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Nuxt.js", "HTML", "Directus CMS"],
+		"isActive": true,
+		"ProjectName": "Bridge Postworks",
+		"Type": "Vue",
+		"tagList": "Nuxt.js,HTML,Directus CMS"
+	},
+	{
+		"URL": "https://join.quomi.com/",
+		"Year": 2019,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["HTML", "Creative"],
+		"isActive": true,
+		"ProjectName": "QUOMI",
+		"Type": "HTML",
+		"tagList": "HTML,Creative"
+	},
+	{
+		"URL": "https://seacare.co.in/",
+		"Year": 2015,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Google Maps", "API", "PHP"],
+		"isActive": true,
+		"ProjectName": "Seacare",
+		"Type": "Core PHP",
+		"tagList": "HTML,Google Maps,API,PHP"
+	},
+	{
+		"URL": "https://aishwaryarathore.com/",
+		"Year": 2017,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress", "Portfolio"],
+		"isActive": true,
+		"ProjectName": "Aishwariya Rathore Portfolio",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Portfolio"
+	},
+	{
+		"URL": "https://schooloflight.in/",
+		"Year": 2019,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"ProjectName": "School Of Light",
+		"Type": "HTML",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://www.foodhallcookerystudio.com/",
+		"Year": 2019,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["Wordpress", "Custom Theme"],
+		"isActive": true,
+		"ProjectName": "Foodhall Cookery Studio",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Custom Theme"
+	},
+	{
+		"URL": "https://opa.marketing",
+		"Year": 2022,
+		"ProjectAs": "Freelance",
+		"Tags": ["Dashboard", "Website"],
+		"isActive": true,
+		"ProjectName": "OPA Influencer Marketing",
+		"Type": "React",
+		"tagList": "Dashboard,Website"
+	},
+	{
+		"URL": "https://betterearth.asia/",
+		"Year": 2023,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Better Earth Coalition",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://waterandlight.in/",
+		"Year": 2020,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"ProjectName": "Water and Light",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://researchandesignstudio.io/",
+		"Year": 2022,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["HTML", "Customization"],
+		"isActive": true,
+		"ProjectName": "R&D Studio",
+		"Type": "Wordpress",
+		"tagList": "HTML,Customization"
+	},
+	{
+		"URL": "https://sandeshpalkar.com/portfolio/",
+		"Year": 2018,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Portfolio"],
+		"isActive": true,
+		"ProjectName": "Sandesh Palkar Portfolio",
+		"Type": "HTML",
+		"tagList": "HTML,Portfolio"
+	},
+	{
+		"URL": "http://aadiproperties.in/",
+		"Year": 2016,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Aadi Properties",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://dreamknots.in/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Dream Knots",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://www.gautamsachdeva.net/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Gautam Sachdeva",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://venturedesign.nyuct.com/",
+		"Year": 2019,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["HTML", "Creative"],
+		"isActive": true,
+		"ProjectName": "Venture Design",
+		"Type": "HTML",
+		"tagList": "HTML,Creative"
+	},
+	{
+		"URL": "https://www.cfosme.in/",
+		"Year": 2018,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML"],
+		"ProjectName": "CFOSME",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://priyankapoddar.com/",
+		"Year": 2016,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress", "Portfolio"],
+		"isActive": true,
+		"ProjectName": "Priyanka Poddar Portfolio",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Portfolio"
+	},
+	{
+		"URL": "https://dollyjain.com/",
+		"Year": 2019,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML", "Wordpress", "Custom Theme"],
+		"isActive": true,
+		"ProjectName": "Dolly Jain",
+		"Type": "Wordpress",
+		"tagList": "HTML,Wordpress,Custom Theme"
+	},
+	{
+		"URL": "http://dhordedeshmukh.com/",
+		"Year": 2023,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Dhorde Deshmukh",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "http://goldenporch.com/",
+		"Year": 2016,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML", "Creative"],
+		"isActive": true,
+		"ProjectName": "Golden Porch",
+		"Type": "HTML",
+		"tagList": "HTML,Creative"
+	},
+	{
+		"URL": "https://www.harshadsatra.in/",
+		"Year": 2020,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress", "Portfolio"],
+		"isActive": true,
+		"ProjectName": "Harshad Satra Portfolio",
+		"Type": "Wordpress",
+		"tagList": "Wordpress,Portfolio"
+	},
+	{
+		"URL": "https://www.designmortals.com/",
+		"Year": 2017,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Design Mortals",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://rinavaa.com/",
+		"Year": 2021,
+		"ProjectAs": "Freelance",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Rinavaa Technologies",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://www.leobuilders.in/",
+		"Year": 2016,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Leo Builders",
+		"Type": "HTML",
+		"tagList": "HTML"
+	},
+	{
+		"URL": "https://thekitchenartisan.com/",
+		"Year": 2019,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML", "PHP"],
+		"ProjectName": "The Kitchen Artisan",
+		"Type": "HTML",
+		"tagList": "HTML,PHP"
+	},
+	{
+		"URL": "https://truescalecapital.com/",
+		"Year": 2021,
+		"ProjectAs": "NYUCT Design Labs",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "True Scale",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "https://ikarialiving.in/",
+		"Year": 2023,
+		"ProjectAs": "Freelance",
+		"Tags": ["Wordpress"],
+		"isActive": true,
+		"ProjectName": "Ikaria Living",
+		"Type": "Wordpress",
+		"tagList": "Wordpress"
+	},
+	{
+		"URL": "http://auxigengroup.com/",
+		"Year": 2016,
+		"ProjectAs": "Yellowslice",
+		"Tags": ["HTML"],
+		"isActive": true,
+		"ProjectName": "Auxigen Group",
+		"Type": "HTML",
+		"tagList": "HTML"
+	}
 ]
