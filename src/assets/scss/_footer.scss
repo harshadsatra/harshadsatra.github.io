@@ -1,3 +1,139 @@
-.footer{
-  background:green;
+.bg-fixed-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: .3;
+
+  filter: var(--tw-invert);
+}
+
+.bg-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.base-grid {
+  will-change: auto;
+  background-size: 30px 30px;
+  background-image: linear-gradient(90deg, var(--muted-transparent) 1px, transparent 0), linear-gradient(180deg, var(--muted-transparent) 1px, transparent 0);
+
+  &.opacity-40 {
+    opacity: 0.4;
+  }
+}
+
+.bg-gradient {
+
+  --tw-gradient-to-position: ;
+  --tw-gradient-from-position: ;
+  --tw-gradient-from: hsl(var(--card)) var(--tw-gradient-from-position);
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+:root {
+  --card: 240 10% 3.9%;
+  --muted-transparent: rgba(255, 255, 255, .1);
+  --tw-invert: invert(100%);
+}
+
+.tt-light-style-on {
+  --card: 0 0% 100%;
+  --muted-transparent: rgba(0, 0, 0, .1);
+  --tw-invert: invert(0%);
+}
+
+.shine {
+  background-image: linear-gradient(45deg, #fff0 45%, #fff, #fff0 55%), linear-gradient(to bottom, #ffffffb3, #fff);
+  background-size: 200% 100%, 100% 100%;
+  background-clip: text, text;
+  -webkit-background-clip: text, text;
+  color: transparent;
+  animation: shine 6s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%
+  }
+
+  to {
+    background-position: 200%
+  }
+}
+
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 100;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1.8rem;
+  width: 24rem;
+  border-radius: 1.5rem;
+  color: #000;
+  display: none;
+  max-width: 90%;
+
+  &.show {
+    display: block;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: .25rem;
+  background-color: #d3d3d3;
+  display: block;
+  height: 1.5rem;
+  line-height: 1.3rem;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

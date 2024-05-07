@@ -7260,6 +7260,7 @@ body:not(.tt-np-image-on) .tt-np-ghost {
 
 .tt-logo-wall>li>a {
 	display: flex;
+	cursor: pointer;
 }
 
 /* Logo wall img */
@@ -7302,7 +7303,6 @@ body:not(.tt-np-image-on) .tt-np-ghost {
 		width: 33.33% !important;
 
 		a {
-			pointer-events: none;
 			transform: scale(0.6);
 		}
 	}
@@ -8815,6 +8815,7 @@ input[type="range"] {
 
 .tt-form-filled .tt-form-control {
 	background-color: rgb(136 136 136 / 15%);
+	// background-color: #1d1d1d;
 	color: #fff;
 	border: none;
 }
@@ -11232,17 +11233,17 @@ body.tt-np-image-on .tt-next-project.tt-np-image-is-light .tt-np-subtitle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 30%;
-	right: 0;
+	top: 50px;
+	right: 175px;
 	width: 40px;
 	height: 35px;
-	background-color: #444;
 	font-size: 16px;
 	color: #fff;
 	cursor: pointer;
 	z-index: 999;
-	border-radius: 50px 0 0 50px;
-	transition: all 0.2s;
+	border-radius: 50px;
+	transition: all .2s;
+	background: #333333;
 }
 
 @media (max-width: 540px) {
@@ -11253,7 +11254,7 @@ body.tt-np-image-on .tt-next-project.tt-np-image-is-light .tt-np-subtitle {
 }
 
 body:not(.is-mobile) .tt-style-switch:hover {
-	width: 45px;
+	// width: 45px;
 	background-color: var(--tt-main-color);
 	color: #fff;
 }
@@ -11265,13 +11266,25 @@ body:not(.is-mobile) .tt-style-switch:hover {
 	line-height: 0;
 }
 
-.tt-style-switch:not(.is-dark) .tt-stsw-dark {
+
+.tt-stsw-dark {
 	display: none;
 }
 
-.tt-style-switch.is-dark .tt-stsw-light {
-	display: none;
+.tt-stsw-light {
+	display: block;
 }
+
+.tt-light-style-on {
+	.tt-stsw-dark {
+		display: block;
+	}
+
+	.tt-stsw-light {
+		display: none;
+	}
+}
+
 
 /* If the sliding sidebar is on the right side */
 @media (min-width: 769px) {

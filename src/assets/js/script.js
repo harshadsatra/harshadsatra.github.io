@@ -45,8 +45,95 @@
 // Miscellaneous
 //
 
+var modal = document.querySelector(".modal")
+var trigger = document.querySelector(".trigger")
+var closeButton = document.querySelector(".close-button")
+
+function toggleModal(e) {
+	const i = e?.currentTarget?.dataset?.id
+	if (i) {
+		document.getElementById(i).classList.add("show")
+	} else {
+		$(".modal-content").removeClass("show")
+	}
+	modal.classList.toggle("show-modal")
+}
+
+function windowOnClick(event) {
+	if (event.target === modal) {
+		toggleModal()
+	}
+}
+
+$(".trigger").on("click", toggleModal)
+$(".close-button").on("click", toggleModal)
+
+// trigger.addEventListener("click", toggleModal)
+// closeButton.addEventListener("click", toggleModal)
+window.addEventListener("click", windowOnClick)
 ;(function ($) {
 	"use strict"
+
+	// ==========================================================================
+	// Template style switch
+	// NOTE: Remove this code if you do not want to use the template light style.
+	// ==========================================================================
+
+	// Display style switch button
+	$("#body-inner").prepend('<div class="tt-style-switch"><div class="tt-stsw-dark"><i class="far fa-moon"></i></div><div class="tt-stsw-light"><i class="fas fa-sun"></i></div></div>')
+
+	// Hide magic cursor on button hover
+	if ($("body").hasClass("tt-smooth-scroll")) {
+		$(".tt-style-switch")
+			.on("mouseenter", function () {
+				gsap.to($ball, { duration: 0.3, scale: 0, opacity: 0 })
+			})
+			.on("mouseleave", function () {
+				gsap.to($ball, { duration: 0.3, scale: 1, opacity: $ballOpacity })
+			})
+	}
+
+	if ($("#tt-light-style-default").length) {
+		// Click on style switch
+		$(".tt-style-switch").on("click", function () {
+			$("body").toggleClass("tt-light-style-default-on")
+			$("body").hasClass("tt-light-style-default-on") ? (localStorage.setItem("lightstyle", "true"), $(".tt-style-switch")) : localStorage.setItem("lightstyle", "false")
+
+			$(".bg-pattern").hide()
+			location.reload()
+		})
+
+		// localStorage
+		var d = localStorage.getItem("lightstyle")
+		d == "true" ? ($("body").addClass("tt-light-style-default-on"), $(".tt-style-switch")) : $("body").removeClass("tt-light-style-default-on")
+
+		// Toggle light stylesheet
+		if ($("body").hasClass("tt-light-style-default-on")) {
+			$("#tt-light-style-default").remove()
+		}
+	} else {
+		// Click on style switch
+		$(".tt-style-switch").on("click", function () {
+			$("body").toggleClass("tt-light-style-on")
+			$("body").hasClass("tt-light-style-on") ? (localStorage.setItem("lightstyle", "true"), $(".tt-style-switch")) : localStorage.setItem("lightstyle", "false")
+			$(".bg-pattern").hide()
+			location.reload()
+		})
+
+		// localStorage
+		var d = localStorage.getItem("lightstyle")
+		d == "true" ? ($("body").addClass("tt-light-style-on"), $(".tt-style-switch")) : $("body").removeClass("tt-light-style-on")
+
+		// Toggle light stylesheet
+		if ($("body").hasClass("tt-light-style-on")) {
+			$("#tt-themecss").after('<link id="tt-light-style" rel="stylesheet" href="assets/css/light.css">')
+		} else {
+			$("#tt-light-style").remove()
+		}
+	}
+
+	// End template style switch
+	// ==========================
 
 	// ========================================
 	// Detect browser and add class to </body>
