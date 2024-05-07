@@ -39,20 +39,19 @@ if (el) {
 			Message: "It would be helpful if you can share some details",
 		},
 		submitHandler: function (form, event) {
-
-            const hasContacted = localStorage.getItem('contacted')
-            if(hasContacted === 'YES'){
-                console.log("Already Contacted");
-                submitBtn.innerHTML = "Sent"
-                submitBtn.dataset.hover = "Sent"
-                submitBtn.disabled = false;
-                 // clear all values
-                 const d = document.querySelectorAll('.tt-form-control')
-                 d.forEach(el => {
-                     el.value = ''
-                 })
-                return;
-            }
+			const hasContacted = localStorage.getItem("contacted")
+			if (hasContacted === "YES") {
+				console.log("Already Contacted")
+				submitBtn.innerHTML = "Sent"
+				submitBtn.dataset.hover = "Sent"
+				submitBtn.disabled = false
+				// clear all values
+				const d = document.querySelectorAll(".tt-form-control")
+				d.forEach((el) => {
+					el.value = ""
+				})
+				return
+			}
 
 			event.preventDefault()
 			// Form Data
@@ -67,7 +66,7 @@ if (el) {
 			const myHeaders = new Headers()
 			myHeaders.append("Content-Type", "application/json")
 
-            /*
+			/*
 			var raw = JSON.stringify({
 				name: "Name1",
 				email: "email@xx.com",
@@ -83,27 +82,26 @@ if (el) {
 				redirect: "follow",
 			}
 
-			fetch("https://cms.chdconsultancy.in/items/harshad_enquiry", requestOptions)
+			fetch("https://cms.shwezstudio.in/items/harshad_enquiry", requestOptions)
 				.then((response) => response.text())
 				.then((result) => {
-                    // console.log(result)
-                    submitBtn.innerHTML = "Sent"
-                    submitBtn.dataset.hover = "Sent"
-                    submitBtn.disabled = false;
-                     // clear all values
-                    const d = document.querySelectorAll('.tt-form-control')
-                    d.forEach(el => {
-                        el.value = ''
-                    })
-                    localStorage.setItem('contacted', 'YES');
-                })
+					// console.log(result)
+					submitBtn.innerHTML = "Sent"
+					submitBtn.dataset.hover = "Sent"
+					submitBtn.disabled = false
+					// clear all values
+					const d = document.querySelectorAll(".tt-form-control")
+					d.forEach((el) => {
+						el.value = ""
+					})
+					localStorage.setItem("contacted", "YES")
+				})
 				.catch((error) => {
-                    console.error("error", error)
-                    submitBtn.innerHTML = "Retry"
-                    submitBtn.dataset.hover = "Retry"
-                    submitBtn.disabled = true;
-
-                })
+					console.error("error", error)
+					submitBtn.innerHTML = "Retry"
+					submitBtn.dataset.hover = "Retry"
+					submitBtn.disabled = true
+				})
 
 			/*
             // Header
