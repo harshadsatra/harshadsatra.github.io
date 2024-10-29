@@ -1,2 +1,0 @@
-
-Browser dimensions (for demo grid thumbnails): 1438x787
