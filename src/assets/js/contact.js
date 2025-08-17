@@ -82,7 +82,7 @@ if (el) {
 				redirect: "follow",
 			}
 
-			fetch("https://cms.shwezstudio.in/items/harshad_enquiry", requestOptions)
+			fetch("https://cms.shwezstudio.in/items/enquiry", requestOptions)
 				.then((response) => response.text())
 				.then((result) => {
 					// console.log(result)
