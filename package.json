@@ -26,7 +26,7 @@
 		"lightgallery": "^2.7.2",
 		"slick-carousel": "^1.8.1",
 		"smooth-scrollbar": "^8.8.4",
-		"swiper": "^11.1.1",
+		"swiper": "^12.1.2",
 		"waypoints": "^4.0.1"
 	},
 	"devDependencies": {
