@@ -1,8 +1,8 @@
-@import "normalize";
-@import "vendor";
-@import "components";
-@import "pages";
-@import "harshad";
-@import "icons";
+@use "normalize";
+@use "vendor";
+@use "components";
+@use "pages";
+@use "harshad";
+@use "icons";
 
-@import "footer";
+@use "footer";

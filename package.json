@@ -16,32 +16,32 @@
 	"dependencies": {
 		"@popperjs/core": "^2.11.8",
 		"floatthead": "^2.2.5",
-		"gsap": "^3.12.5",
+		"gsap": "^3.14.2",
 		"imagesloaded": "^5.0.0",
 		"isotope-layout": "^3.0.6",
 		"isotope-packery": "^2.0.1",
-		"jquery": "^3.7.1",
-		"jquery-mousewheel": "^3.1.13",
-		"jquery-validation": "^1.20.0",
-		"lightgallery": "^2.7.2",
+		"jquery": "^4.0.0",
+		"jquery-mousewheel": "^3.2.2",
+		"jquery-validation": "^1.22.1",
+		"lightgallery": "^2.9.0",
 		"slick-carousel": "^1.8.1",
 		"smooth-scrollbar": "^8.8.4",
 		"swiper": "^12.1.2",
 		"waypoints": "^4.0.1"
 	},
 	"devDependencies": {
-		"gulp": "^5.0.0",
+		"gulp": "^5.0.1",
 		"gulp-concat": "^2.6.1",
 		"gulp-html-partial": "^1.0.1",
 		"gulp-htmlmin": "^5.0.1",
 		"gulp-live-server": "^0.0.31",
 		"gulp-minify": "^3.1.0",
-		"gulp-purgecss": "^5.0.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-sass": "^5.1.0",
-		"gulp-sourcemaps": "^2.6.5",
+		"gulp-purgecss": "^8.0.0",
+		"gulp-rename": "^2.1.0",
+		"gulp-sass": "^6.0.1",
+		"gulp-sourcemaps": "^3.0.0",
 		"gulp-strip-comments": "^2.6.0",
 		"gulp-uglify-es": "^3.0.0",
-		"sass": "^1.77.0"
+		"sass": "^1.97.3"
 	}
 }
