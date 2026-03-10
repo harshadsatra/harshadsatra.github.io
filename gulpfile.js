@@ -89,9 +89,9 @@ gulp.task("purgecss", () => {
 // })
 
 // Copy Videos
-gulp.task("copy-vid", function () {
-	return gulp.src("src/assets/vids/**/*.*").pipe(gulp.dest("./public/assets/vids/"))
-})
+// gulp.task("copy-vid", function () {
+// 	return gulp.src("src/assets/vids/**/*.*").pipe(gulp.dest("./public/assets/vids/"))
+// })
 
 // Copy Fonts
 gulp.task("copy-src-js", function () {
@@ -111,7 +111,7 @@ gulp.task("copy", function () {
 
 // Build Complete Public Folder
 // gulp.task('default', gulp.series('html','copy-src-js','copy-actions','pack-js','copy-img','copy-font','scss'));
-gulp.task("default", gulp.series("html", "copy-src-js", "pack-js", "copy-vid", "scss", "purgecss", "defer-js", "copy"))
+gulp.task("default", gulp.series("html", "copy-src-js", "pack-js", "scss", "purgecss", "defer-js", "copy"))
 
 // Watch Task to Update Files
 gulp.task("watch", function () {
