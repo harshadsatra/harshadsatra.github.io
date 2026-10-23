@@ -14,7 +14,7 @@ const uglify = require("gulp-uglify-es").default
 // Reference : https://www.toptal.com/javascript/optimize-js-and-css-with-gulp
 const node_path = "node_modules/"
 const asset_path = "src/assets/js/"
-const srcJS = [node_path + "jquery/dist/jquery.min.js", asset_path + "gsap.min.js", asset_path + "ScrollToPlugin.min.js", asset_path + "ScrollTrigger.min.js", asset_path + "smooth-scrollbar.js", asset_path + "swiper-bundle.min.js", asset_path + "imagesloaded.pkgd.min.js", asset_path + "isotope.pkgd.min.js", asset_path + "packery-mode.pkgd.min.js", asset_path + "lightgallery-all.min.js", asset_path + "jquery.mousewheel.min.js"]
+const srcJS = [node_path + "jquery/dist/jquery.min.js", node_path + "gsap/dist/gsap.min.js", node_path + "gsap/dist/ScrollToPlugin.min.js", node_path + "gsap/dist/ScrollTrigger.min.js", asset_path + "smooth-scrollbar.js", asset_path + "swiper-bundle.min.js", asset_path + "imagesloaded.pkgd.min.js", asset_path + "isotope.pkgd.min.js", asset_path + "packery-mode.pkgd.min.js", asset_path + "lightgallery-all.min.js", asset_path + "jquery.mousewheel.min.js"]
 
 gulp.task("pack-js", function () {
 	return gulp.src(srcJS).pipe(concat("bundle.js")).pipe(minify()).pipe(gulp.dest("public/assets/js"))

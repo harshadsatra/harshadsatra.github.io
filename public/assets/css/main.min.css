@@ -1613,7 +1613,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-.fa, .fab, .far, .fas {
+ .fab, .far, .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -1724,11 +1724,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   src: url(../font/fa-solid-900.eot);
   src: url(../font/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../font/fa-solid-900.woff2) format("woff2"), url(../font/fa-solid-900.woff) format("woff"), url(../font/fa-solid-900.ttf) format("truetype"), url(../font/fa-solid-900.svg#fontawesome) format("svg");
 }
-.fa, .far, .fas {
+ .far, .fas {
   font-family: "Font Awesome 5 Free";
 }
 
-.fa, .fas {
+ .fas {
   font-weight: 900;
 }
 
@@ -7662,7 +7662,7 @@ input[type=range] {
 .tt-form-radio label::before {
   position: absolute;
   top: 3px;
-  left: 0;
+  left: -0;
   display: block;
   width: 20px;
   height: 20px;

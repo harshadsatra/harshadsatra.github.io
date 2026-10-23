@@ -30478,7 +30478,7 @@ input[type=range] {
 .tt-form-radio label::before {
   position: absolute;
   top: 3px;
-  left: 0;
+  left: -0;
   display: block;
   width: 20px;
   height: 20px;
