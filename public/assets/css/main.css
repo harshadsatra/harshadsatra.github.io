@@ -32985,6 +32985,21 @@ body:not(.is-mobile) .tt-style-switch:hover {
   padding: 120px 0 40px;
 }
 
+.project-list-stacked > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px 40px;
+}
+.project-list-stacked > ul > li {
+  display: block;
+  max-width: none;
+  margin: 15px 0;
+  padding-right: 0;
+}
+.project-list-stacked > ul > li::after {
+  display: none;
+}
+
 .sprite {
   width: 100px;
   height: 100px;

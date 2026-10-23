@@ -5,9 +5,21 @@
 ## Pages
 
 - [Home](https://www.harshadsatra.in/): Services and featured work
-- [Projects](https://www.harshadsatra.in/projects): Portfolio of 28 client projects
+- [Projects](https://www.harshadsatra.in/projects): 28 selected projects from 60+ delivered since 2015
 - [About Me](https://www.harshadsatra.in/about-me): Bio, experience, education, certifications and client testimonials
 - [Contact](https://www.harshadsatra.in/contact): Enquiry form and FAQ about hiring
+- [Services](https://www.harshadsatra.in/services): Overview of freelance web development services
+- [AI automation](https://www.harshadsatra.in/services/ai-automation): AI chatbots, workflow automation and AI search with Claude and OpenAI APIs
+- [WordPress & WooCommerce development](https://www.harshadsatra.in/services/wordpress-woocommerce-development): Custom themes, plugins and WooCommerce stores
+- [Shopify development](https://www.harshadsatra.in/services/shopify-development): Custom Online Store 2.0 themes and stores
+- [Vue.js & Nuxt.js development](https://www.harshadsatra.in/services/vue-nuxt-development): Nuxt sites, Vue apps and Directus headless CMS
+- [React & Next.js development](https://www.harshadsatra.in/services/react-nextjs-development): Next.js sites and React web apps
+- [Website speed & technical SEO](https://www.harshadsatra.in/services/website-speed-seo-optimization): Core Web Vitals, schema and AI-search readiness
+- [How I work](https://www.harshadsatra.in/how-i-work): Process, engagement models and project FAQ
+- [Free website audit](https://www.harshadsatra.in/free-website-audit): Free speed, SEO and AI-search review
+- [Hire a remote developer from India](https://www.harshadsatra.in/hire-remote-web-developer-india): Working with international clients
+- [Case study: Bridge Postworks](https://www.harshadsatra.in/projects/bridge-postworks): Nuxt.js + Directus + AWS site for a film post-production studio
+- [Case study: InOrdinary](https://www.harshadsatra.in/projects/inordinary): Custom WooCommerce store with artist CMS
 - [Case studies](https://projects.harshadsatra.in/): Detailed past projects
 
 ## Services

@@ -1,7 +1,7 @@
 // Contact form endpoint: filters spam, then forwards the enquiry to Directus.
 // Uses the Directus Public role's create permission on "enquiry" (no token).
 const DIRECTUS_URL = "https://cms.shwezstudio.in/items/enquiry"
-const SUBJECTS = ["Say Hello", "Discuss a new project", "Collaborate on a project", "Other"]
+const SUBJECTS = ["Say Hello", "Discuss a new project", "Collaborate on a project", "Free website audit", "Other"]
 const MIN_FILL_MS = 3000
 
 function isSpam(b) {

@@ -78,3 +78,19 @@
 .pspl-about {
 	padding: 120px 0 40px;
 }
+
+// Full-width rows for project lists on service pages
+.project-list-stacked > ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 10px 40px;
+	> li {
+		display: block;
+		max-width: none;
+		margin: 15px 0;
+		padding-right: 0;
+		&::after {
+			display: none;
+		}
+	}
+}
