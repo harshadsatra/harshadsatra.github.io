@@ -32970,6 +32970,21 @@ body:not(.is-mobile) .tt-style-switch:hover {
   margin-bottom: 0;
 }
 
+.tagline {
+  font-weight: 600;
+}
+
+.about-timeline h3 {
+  margin-bottom: 8px;
+}
+.about-timeline p {
+  color: #bbb;
+}
+
+.pspl-about {
+  padding: 120px 0 40px;
+}
+
 .sprite {
   width: 100px;
   height: 100px;

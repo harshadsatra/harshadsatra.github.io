@@ -11,4 +11,14 @@
   gtag('js', new Date());
 
   gtag('config', 'G-HSWW2RVKBE');
+
+  // Conversion signals: email / phone / social clicks (outbound project clicks are covered by GA4 enhanced measurement)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (href.indexOf('mailto:') === 0) gtag('event', 'contact_click', { method: 'email' });
+    else if (href.indexOf('tel:') === 0) gtag('event', 'contact_click', { method: 'phone' });
+    else if (/linkedin\.com|github\.com|instagram\.com|twitter\.com|linktr\.ee/.test(href)) gtag('event', 'social_click', { link_url: href });
+  });
 </script>

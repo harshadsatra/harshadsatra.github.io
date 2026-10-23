@@ -1,2 +1,15 @@
 User-agent: *
+Allow: /
+
+# AI search & assistant crawlers are welcome
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://www.harshadsatra.in/sitemap.xml

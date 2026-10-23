@@ -126,7 +126,7 @@ window.addEventListener("click", windowOnClick)
 
 		// Toggle light stylesheet
 		if ($("body").hasClass("tt-light-style-on")) {
-			$("#tt-themecss").after('<link id="tt-light-style" rel="stylesheet" href="assets/css/light.css">')
+			$("#tt-themecss").after('<link id="tt-light-style" rel="stylesheet" href="/assets/css/light.css">')
 		} else {
 			$("#tt-light-style").remove()
 		}

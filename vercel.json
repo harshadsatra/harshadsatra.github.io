@@ -8,7 +8,7 @@
 			"headers": [
 				{
 					"key": "Content-Security-Policy",
-					"value": "frame-ancestors 'none'; img-src 'self' data: *.google.com docux.ai *.bing.com *.hubspot.com *.clarity.ms *.google-analytics.com *.freshchat.com *.hsforms.net *.hsforms.com; style-src 'self' 'unsafe-inline' docux.ai *.google-analytics.com *.freshchat.com *.gstatic.com *.googleapis.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' docux.ai vitals.vercel-insights.com *.googletagmanager.com *.clarity.ms *.hs-scripts.com *.hsforms.net *.hs-analytics.net *.hscollectedforms.net *.cloudflareinsights.com *.hs-banner.com *.google-analytics.com *.hsforms.com *.fw-cdn.com *.freshchat.com *.amazonaws.com"
+					"value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 				},
 				{
 					"key": "Referrer-Policy",
@@ -33,6 +33,21 @@
 				{
 					"key": "Strict-Transport-Security",
 					"value": "max-age=15768000;includeSubdomains"
+				}
+			]
+		},
+		{
+			"source": "/(.*)",
+			"has": [
+				{
+					"type": "host",
+					"value": ".*\\.vercel\\.app"
+				}
+			],
+			"headers": [
+				{
+					"key": "X-Robots-Tag",
+					"value": "noindex"
 				}
 			]
 		}

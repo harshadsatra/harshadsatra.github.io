@@ -1,0 +1,66 @@
+# Harshad Satra
+
+> Harshad Satra is a freelance web developer based in Mumbai, India, with 13 years of experience (since 2013) building fast, SEO-friendly and accessible websites, e-commerce stores, SaaS front ends and AI-driven web experiences. Core stack: Vue.js, Nuxt.js, React, Next.js, TypeScript, Node.js, WordPress, WooCommerce, Shopify, Directus, GSAP; deployments on AWS, Vercel, DigitalOcean and Netlify. Available for freelance projects worldwide.
+
+## Pages
+
+- [Home](https://www.harshadsatra.in/): Services and featured work
+- [Projects](https://www.harshadsatra.in/projects): Portfolio of 28 client projects
+- [About Me](https://www.harshadsatra.in/about-me): Bio, experience, education, certifications and client testimonials
+- [Contact](https://www.harshadsatra.in/contact): Enquiry form and FAQ about hiring
+- [Case studies](https://projects.harshadsatra.in/): Detailed past projects
+
+## Services
+
+- AI-powered web solutions (chatbots, AI search, automation)
+- Custom websites and web apps (Vue.js, Nuxt.js, React, Next.js)
+- E-commerce (WordPress/WooCommerce, Shopify Online Store 2.0)
+- SaaS front-end architecture and dashboards
+- Performance, technical SEO and accessibility audits and fixes
+
+## Experience
+
+- Leah: Technical Lead (Sep 2026 to present); Senior Software Developer (Jul 2025 to Sep 2026)
+- DocuX: Frontend Software Developer (Jun 2020 to Feb 2025). Vue.js application UI, Nuxt.js sites, led front-end team, 30% faster load times
+- Croma: UI/JavaScript developer (2018 to 2020). Offers and promotions on Dynamic Yield
+- Yellow Slice: Web Developer, then Senior Web Developer (2013 to 2020). WordPress, React/Angular, CMS, AWS
+- Education: B.Sc. Information Technology, University of Mumbai (2013)
+- Certifications: Claude Code in Action; MongoDB Node.js Developer Path; Vue - The Complete Guide; Shopify Theme Development (Online Store 2.0 + TailwindCSS); Learn to Code with Python 3
+
+## Contact
+
+- Email: hello@harshadsatra.in
+- Phone: +91 8291 954 312
+- LinkedIn: https://www.linkedin.com/in/harshadsatra/
+- GitHub: https://github.com/harshadsatra
+
+## Selected projects
+
+- [lokall.places](https://lokall.place/): NEXT.js, Creative
+- [Sachin Gupta Buildcon](https://sachinguptabuildcon.com/): Codeignitor, PHP, HTML
+- [Creative Newtech Limited](https://www.creativenewtech.com/): Wordpress, Custom Theme, AWS
+- [Early Man Film](https://www.earlymanfilm.com/): VUE.js, API Integration
+- [The Common Table](https://thecommontable.eu/): Wordpress
+- [Nube Cirrus](https://nubecirrus.com/): Wordpress API, Angular
+- [DigiValet](https://harshadsatra.com/nyuct/digivalet-microsite): Micorsite
+- [Inter-venture Ocean](https://interoceanventures.com/): Creative, On scroll animation
+- [Head Light India](https://harshadsatra.github.io/headlightindia/): HTML, Creative, Lottie animation
+- [Jaisalmer Desert Festival](https://i-love-jaisalmer.vercel.app/): HTML, VUE.js, Airtable
+- [Planet Xplorium](https://planetxplorium.com/): Wordpress
+- [InOrdinary Store](https://inordinary.in/): WordPress, WooCommerce. Full WooCommerce build with custom payment flow, artist CMS and AWS Lightsail hosting
+- [Bridge Postworks](https://www.bridgepostworks.com/): Nuxt.js, Directus CMS, AWS. Custom Nuxt.js site with Directus CMS, AWS deployment and a media streaming player
+- [OPA Influencer Marketing](https://opa.marketing): Dashboard, Website
+- [Better Earth Coalition](https://betterearth.asia/): Wordpress
+- [R&amp;D Studio](https://researchandesignstudio.io/): Wordpress, Customization
+- [Dream Knots](https://dreamknots.in/): HTML
+- [Venture Design](https://venturedesign.nyuct.com/): Creative
+- [Priyanka Poddar Portfolio](https://priyankapoddar.com/): Wordpress, Portfolio
+- [Dolly Jain](https://dollyjain.com/): Wordpress, Custom Theme
+- [Golden Porch](http://goldenporch.com/): HTML, Creative
+- [The Kitchen Artisan](https://thekitchenartisan.com/): HTML, PHP
+- [Ikaria Living](https://ikarialiving.in/): Wordpress
+- [QUOMI](https://join.quomi.com/): Creative
+- [Ramsha Qamar Portfolio](https://ramshaqamar.com/): Wordpress
+- [Aishwariya Rathore Portfolio](https://aishwaryarathore.com/): Wordpress, Portfolio
+- [Aadi Properties](http://aadiproperties.in/): HTML
+- [Seacare Services](https://seacare.co.in/): Google Maps, API, PHP

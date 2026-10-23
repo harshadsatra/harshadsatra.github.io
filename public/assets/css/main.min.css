@@ -261,6 +261,9 @@ details {
 /*
  * Add the correct display in all browsers.
  */
+summary {
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -1942,6 +1945,10 @@ p.text-xxlg {
   max-width: 1000px !important;
 }
 
+.max-width-1200 {
+  max-width: 1200px !important;
+}
+
 .max-width-1700 {
   max-width: 1700px !important;
 }
@@ -2170,6 +2177,10 @@ a.tt-link:focus {
 
 .margin-top-40 {
   margin-top: 40px !important;
+}
+
+.margin-top-80 {
+  margin-top: 80px !important;
 }
 
 /* margin bottom */
@@ -8537,13 +8548,6 @@ body:not(.is-mobile) .tt-style-switch:hover {
     opacity: 1;
   }
 }
-.ai-text {
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 7s infinite linear;
-  opacity: 1 !important;
-}
 
 @-webkit-keyframes hue {
   from {
@@ -8595,6 +8599,21 @@ body:not(.is-mobile) .tt-style-switch:hover {
 }
 .privacy-block li p {
   margin-bottom: 0;
+}
+
+.tagline {
+  font-weight: 600;
+}
+
+.about-timeline h3 {
+  margin-bottom: 8px;
+}
+.about-timeline p {
+  color: #bbb;
+}
+
+.pspl-about {
+  padding: 120px 0 40px;
 }
 
 .sprite {

@@ -103,7 +103,7 @@ gulp.task("copy-actions", function () {
 	return gulp.src("src/actions/**/*.*").pipe(gulp.dest("./public/actions/"))
 })
 
-const copySrc = ["src/sitemap.xml", "src/robots.txt"]
+const copySrc = ["src/sitemap.xml", "src/robots.txt", "src/llms.txt"]
 
 gulp.task("copy", function () {
 	return gulp.src(copySrc).pipe(gulp.dest("./public/"))
