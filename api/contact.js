@@ -1,5 +1,5 @@
 // Contact form endpoint: filters spam, then forwards the enquiry to Directus.
-// Env: DIRECTUS_TOKEN (static token of a user/role allowed to create "enquiry" items).
+// Uses the Directus Public role's create permission on "enquiry" (no token).
 const DIRECTUS_URL = "https://cms.shwezstudio.in/items/enquiry"
 const SUBJECTS = ["Say Hello", "Discuss a new project", "Collaborate on a project", "Other"]
 const MIN_FILL_MS = 3000
@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
 	try {
 		const r = await fetch(DIRECTUS_URL, {
 			method: "POST",
-			headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.DIRECTUS_TOKEN}` },
+			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ name: b.name, email: b.email, subject: b.subject, message: b.message, src: b.src.slice(0, 300) }),
 		})
 		if (!r.ok) throw new Error(`Directus ${r.status}: ${await r.text()}`)
