@@ -2068,7 +2068,11 @@ window.addEventListener("click", windowOnClick)
 		})
 		tl_ImageParallax.to($animImageParallax, { yPercent: 30, ease: "none" })
 
+		// Guarded like animZoomInRefresh: refresh() re-fires onEnter in GSAP 3.11+.
+		let imgParallaxRefreshed = false
 		function animImgParallaxRefresh() {
+			if (imgParallaxRefreshed) return
+			imgParallaxRefreshed = true
 			tl_ImageParallax.scrollTrigger.refresh()
 		}
 
@@ -2325,8 +2329,12 @@ window.addEventListener("click", windowOnClick)
 		})
 		tl_ZoomIn.from($this, { duration: 1.5, autoAlpha: 0, scale: 1.2, ease: Power2.easeOut, clearProps: "all" })
 
-		// Refresh start/end positions on enter.
+		// Refresh start/end positions on first enter.
+		// Guarded: since GSAP 3.11, refresh() re-fires onEnter, which recursed forever.
+		let zoomInRefreshed = false
 		function animZoomInRefresh() {
+			if (zoomInRefreshed) return
+			zoomInRefreshed = true
 			ScrollTrigger.refresh()
 		}
 	})
